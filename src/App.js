@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from "./assets/urja_logo_black.png";
+import AppRoute from './routes';
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
       <h5>Urja TIET is back , bigger better and bolder</h5>
       <h3>Stay Tuned !</h3>
     </div>
+    // Use this Fragment to check your page.
+    // <Fragment>
+    //   <AppRoute />
+    // </Fragment>
   );
 }
 
