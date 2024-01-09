@@ -1,7 +1,18 @@
+@font-face {
+  font-family: "veto";
+  src: url("../../fonts/VetoSansCondBold.ttf");
+}
 .galleryContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust as needed */
   background-color: black;
+}
+.heading {
+  text-align: center;
+  color: #ffee59;
+  /* font-family: "veto"; */
+  font-size: 4rem;
+  margin-bottom: 0;
 }

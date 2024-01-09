@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar.jsx";
 const Hero = lazy(() => import("./Pages/Hero/Hero.jsx"));
 const About = lazy(() => import("./Pages/About/About.jsx"));
 const Contact = lazy(() => import("./Pages/Contact/Contact.jsx"));

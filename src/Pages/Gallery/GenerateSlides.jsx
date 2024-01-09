@@ -12,12 +12,9 @@ const imageLinks = [
 ];
 export function GenerateSlides(length = 10) {
   return Array.from({ length }).map((value, index) => {
-    index = index;
-
     return {
       src: imageLinks[index % imageLinks.length],
       alt: `Image ${index + 1}`,
-      loading: "lazy",
     };
   });
 }
