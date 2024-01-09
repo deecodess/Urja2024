@@ -1,6 +1,6 @@
 import "./App.css";
 import logo from "./assets/urja_logo_black.png";
-import AppRoute from './routes';
+import AppRoute from './Routes';
 
 function App() {
   return (
