@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "veto";
+  src: url("../../fonts/VetoSansCondBold.ttf");
+}
+.container {
+  background-color: #171717;
+  max-height: -webkit-fit-content;
+  padding: 1rem;
+  text-align: center;
+}
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: max-content; /* Adjust as needed */
+  width: 100%;
+}
+.heading {
+  text-align: center;
+  color: #ffee59;
+  /* font-family: "veto"; */
+  font-size: 4rem;
+  margin-bottom: 0;
+  position: relative; /* Ensure stacking context for z-index to work */
+  z-index: 2;
+}
+.customh4 {
+  text-align: center;
+  color: white;
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.bgtext::before {
+  content: "GALLERY";
+  color: transparent; /* Set text color to transparent */
+  -webkit-text-stroke: 0.09px #2e2c1d;
+  /* text-shadow: 0px 2px 4px red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(12);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem; /* Adjust H1 font size for smaller screens */
+  }
+
+  .bgtext::before {
+    transform: translate(-50%, -50%) scale(6); /* Adjust scale for smaller screens */
+  }
+  .customh4 {
+    font-size: 0.8rem;
+  }
+}
