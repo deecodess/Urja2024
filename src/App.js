@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import "./App.css";
 import logo from "./assets/urja_logo_black.png";
-import  AppRoute  from "./Routes.jsx";
+
+import AppRoute from './Routes';
 
 function App() {
   return (
