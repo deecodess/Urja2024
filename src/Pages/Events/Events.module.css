@@ -6,6 +6,7 @@
     align-items: center;
     height: 100vh;
     background-color: #171717;
+    background-image: url(background.svg);
 }
 
 img {
