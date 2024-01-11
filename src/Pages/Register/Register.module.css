@@ -74,7 +74,7 @@ body::before {
 .sub-heading-1{
     position: relative;
     top: 200px;
-    left: -640px;
+    left: 145px;
     right: 1417px;
     bottom: 2021px;
     color: #FFFFFF;
@@ -90,7 +90,7 @@ body::before {
 .sub-heading-2{
     position: relative;
     top: 300px;
-    left: -545px;
+    left: 145px;
     right: 1229px;
     bottom: 1808px;
     color: #FFFFFF;
@@ -106,7 +106,7 @@ body::before {
 .sub-heading-3{
     position: relative;
     top: 400px;
-    left: -625px;
+    left: 145px;
     right: 1390px;
     bottom: 1505px;
     color: #FFFFFF;
@@ -122,7 +122,7 @@ body::before {
 .sub-heading-4{
     position: relative;
     top: 500px;
-    left: -635px;
+    left: 145px;
     right: 1420px;
     bottom: 1382px;
     color: #FFFFFF;
@@ -138,7 +138,7 @@ body::before {
 .sub-heading-5{
     position: relative;
     top: 600px;
-    left: -650px;
+    left: 145px;
     right: 1448px;
     bottom: 1169px;
     color: #FFFFFF;
@@ -154,7 +154,7 @@ body::before {
 .sub-heading-6{
     position: relative;
     top: 700px;
-    left: -520px;
+    left: 145px;
     right: 1192px;
     bottom: 946px;
     color: #FFFFFF;
@@ -170,7 +170,7 @@ body::before {
 .sub-heading-7{
     position: relative;
     top: 800px;
-    left: -420px;
+    left: 145px;
     right: 994px;
     bottom: 723px;
     color: #FFFFFF;
@@ -194,7 +194,7 @@ body::before {
     /* border-color: white; */
     border: 2px solid #8b8b8b;
     padding: 5px;
-    left: 25px;
+    left: 145px;
     background: #252525;
     color: white;
     font-size: 30px;
@@ -238,5 +238,5 @@ body::before {
     font-weight: 400;
     line-height: normal;
     top:900px;
-    left: -655px;
+    left: 145px;
 }
