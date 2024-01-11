@@ -1,4 +1,4 @@
-// Navbar.jsx
+// Navbar still have to be added
 import React from 'react';
 import Urja_logo from '../../assets/Group 23.png';
 import Main from '../../assets/Group 19.png';
