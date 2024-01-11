@@ -6,7 +6,7 @@ const Contact = lazy (() => import ('./Pages/Contact/Contact.jsx'));
 const Events = lazy (() => import ('./Pages/Events/Events.jsx'));
 const Gallery = lazy (() => import ('./Pages/Gallery/Gallery.jsx'));
 const Register = lazy (() => import ('./Pages/Register/Register.jsx'));
-const Team = lazy (() => import ('./Componets/Team/Team.jsx'));
+const Team = lazy (() => import ('../src/Pages/Team/Team.jsx'));
 
 const AppRoute = () => {
   return (
