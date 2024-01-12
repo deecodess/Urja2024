@@ -1,5 +1,3 @@
-/* Navbar.module.css */
-
 * {
     box-sizing: border-box;
 }
@@ -7,12 +5,10 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-image: url('../../assets/URJA.png');
     background-size: 95%;
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(90%);
 }
 
 .container {
@@ -24,11 +20,31 @@ body {
     height: 100vh;
 }
 
-.bg1 {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a.active_class {
+    font-weight: bold;
+}
+
+.links a.passive_class {
+    font-weight: bold;
+    display: flex-end;
+    margin-left: 90%;
+}
+
+.registrations {
+    margin-left: 90%;
+    margin-right: 2%;
+    order: -1;
 }
 
 .logo {
@@ -66,9 +82,6 @@ body {
     color: white;
     margin-top: 5%;
 }
-
-
-/* Styling for the lion image */
 
 .lionImage {
     max-width: 62%;
