@@ -1,0 +1,437 @@
+body{
+    background-color: black;
+    color: white;
+}
+#name{
+    margin-top: 10px;
+}
+#header-contactUs{
+    font-size: 3em;
+}
+#message-text{
+    width: 25rem;
+    height: 15rem;
+    margin-top: 0.5rem;
+    background-color: rgb(44, 40, 40);
+}
+#email-text{
+    width: 25rem;
+    height: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 0.5rem;
+    background-color: rgb(44, 40, 40);
+}
+#name-text{
+    width: 25rem;
+    height: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 0.5rem;
+    background-color: rgb(44, 40, 40);
+}
+#Submit{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 12%;
+    background-color: yellow;
+    margin-top: 1rem;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #yellow-text{
+    color: yellow;
+    font-size: 1.4em;
+  }
+  #urja-mail{
+    font-size: 1.2em;
+  }
+  #UrjaLogo{
+    height: 6em;
+    width: 13em;
+}   
+  .form-container {
+    max-width: 400px;
+    margin-top: 3em;
+    margin-left: 7rem;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+
+  
+  @media (min-width:1050px) and (max-width:1200px) {
+    .Big-logo{
+        display: none;
+    }
+    #header-contactUs{
+      font-size: 2.7em;
+  }
+  #message-text{
+    width: 23rem;
+    height: 14rem;
+    margin-top: 0.5rem;
+    background-color: rgb(44, 40, 40);
+}
+#email-text{
+    width: 23rem;
+    height: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 0.5rem;
+    background-color: rgb(44, 40, 40);
+}
+#name-text{
+    width: 23rem;
+    height: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 0.5rem;
+    background-color: rgb(44, 40, 40);
+}
+#Submit{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 12%;
+    background-color: yellow;
+    margin-top: 1rem;
+}
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 2em;
+  margin-left: 4.5rem;
+}
+.logo-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 2em;
+}
+
+}
+
+
+@media (min-width:950px) and (max-width:1050px) {
+  .Big-logo{
+      display: none;
+  }
+  #header-contactUs{
+    font-size: 2.4em;
+}
+#message-text{
+  width: 21.5rem;
+  height: 14rem;
+  margin-top: 0.5rem;
+  background-color: rgb(44, 40, 40);
+}
+#email-text{
+  width: 21.5rem;
+  height: 1.5rem;
+  margin-bottom: 1em;
+  margin-top: 0.5rem;
+  background-color: rgb(44, 40, 40);
+}
+#name-text{
+  width: 21.5rem;
+  height: 1.5rem;
+  margin-bottom: 1em;
+  margin-top: 0.5rem;
+  background-color: rgb(44, 40, 40);
+}
+#Submit{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 12%;
+  background-color: yellow;
+  margin-top: 1rem;
+}
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 2.5em;
+  margin-left: 5.5rem;
+}
+.logo-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 2em;
+}
+}
+  
+@media (min-width:850px) and (max-width:950px) {
+  .Big-logo{
+      display: none;
+  }
+  #header-contactUs{
+    font-size: 2.1em;
+}
+#message-text{
+  width: 20.5rem;
+  height: 11.5rem;
+  margin-top: 0.5rem;
+  background-color: rgb(44, 40, 40);
+}
+#email-text{
+  width: 20.5rem;
+  height: 1.2rem;
+  margin-bottom: 1em;
+  margin-top: 0.5rem;
+  background-color: rgb(44, 40, 40);
+}
+#name-text{
+  width: 20.5rem;
+  height: 1.2rem;
+  margin-bottom: 1em;
+  margin-top: 0.5rem;
+  background-color: rgb(44, 40, 40);
+}
+#Submit{
+  width: 4rem;
+  height: 1.6rem;
+  border-radius: 12%;
+  background-color: yellow;
+  margin-top: 1rem;
+}
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 2.2em;
+  margin-left: 4.67rem;
+}
+.logo-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 2em;
+}
+#yellow-text{
+    color: yellow;
+    font-size: 1.2em;
+  }
+  #urja-mail{
+    font-size: 1em;
+  }
+  #UrjaLogo{
+    height: 5em;
+    width: 10em;
+}   
+}
+
+@media (min-width:700px) and (max-width:850px) {
+  .Big-logo{
+      display: none;
+  }
+  #header-contactUs{
+    font-size: 2.1em;
+}
+#message-text{
+  width: 80%;
+  height: 13rem;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#email-text{
+  width: 80%;
+  height: 1.2rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#name-text{
+  width: 80%;
+  height: 1.2rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#Submit{
+  width: 3.8rem;
+  height: 1.5rem;
+  border-radius: 12%;
+  background-color: yellow;
+  margin-top: 1rem;
+}
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 2em;
+  margin-left: 4rem;
+}
+.logo-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 2em;
+}
+#yellow-text{
+    color: yellow;
+    font-size: 1.1em;
+  }
+  #urja-mail{
+    font-size: 0.9em;
+  }
+  #UrjaLogo{
+    height: 4.5em;
+    width: 9em;
+}   
+}
+
+@media (min-width:600px) and (max-width:700px) {
+  .Big-logo{
+      display: none;
+  }
+  #header-contactUs{
+    font-size: 1.5em;
+}
+#message-text{
+  width: 75%;
+  height: 12rem;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#email-text{
+  width: 75%;
+  height: 1.2rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#name-text{
+  width: 75%;
+  height: 1.2rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#Submit{
+  width: 3.8rem;
+  height: 1.5rem;
+  border-radius: 12%;
+  background-color: yellow;
+  margin-top: 1rem;
+}
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 2em;
+  margin-left: 4rem;
+}
+.logo-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 2em;
+}
+#yellow-text{
+    color: yellow;
+    font-size: 1em;
+  }
+  #urja-mail{
+    font-size: 0.8em;
+  }
+  #UrjaLogo{
+    height: 4em;
+    width: 8em;
+}   
+}
+
+@media (min-width:500px) and (max-width:600px) {
+  .Big-logo{
+      display: none;
+  }
+  .logo-container {
+    display: none;
+  }
+  .contact-container {
+    justify-content: center;
+  }
+  .form-container {
+    /* flex: 1; */
+    max-width: 400px;
+    margin-top: 3em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #header-contactUs{
+    font-size: 2.1em;
+}
+#message-text{
+  width: 22em;
+  height: 11rem;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#email-text{
+  width: 22em;
+  height: 1rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#name-text{
+  width: 22em;
+  height: 1rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#Submit{
+  width: 3.5rem;
+  height: 1.5rem;
+  border-radius: 12%;
+  background-color: yellow;
+  margin-top: 1rem;
+}
+  }
+
+
+  
+@media  (max-width:500px) {
+  .Big-logo{
+      display: none;
+  }
+  .logo-container {
+    display: none;
+  }
+  .contact-container {
+    justify-content: center;
+  }
+  .form-container {
+    /* flex: 1; */
+    max-width: 400px;
+    margin-top: 3em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #header-contactUs{
+    font-size: 2.1em;
+}
+#message-text{
+  width: 20.5em;
+  height: 11rem;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#email-text{
+  width: 20.5em;
+  height: 1rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#name-text{
+  width: 20.5em;
+  height: 1rem;
+  margin-bottom: 0.8em;
+  margin-top: 0.4rem;
+  background-color: rgb(44, 40, 40);
+}
+#Submit{
+  width: 3.5rem;
+  height: 1.5rem;
+  border-radius: 12%;
+  background-color: yellow;
+  margin-top: 1rem;
+}
+  }
+
+
+  /* Add more styling as needed */
+  
