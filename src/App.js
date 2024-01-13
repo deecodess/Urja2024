@@ -7,9 +7,6 @@ import AppRoute from './Routes';
 
 function App() {
   return (
-    <div>
-      <About/>
-    </div>
     // <div className="App">
     //   <img src={logo} className="logo" />
     //   <h1>Something big is coming soon !</h1>
@@ -17,9 +14,9 @@ function App() {
     //   <h3>Stay Tuned !</h3>
     // </div>
     // //Use this Fragment to check your page.
-    // <Fragment>
-    //   <AppRoute />
-    // </Fragment>
+    <Fragment>
+      <AppRoute />
+    </Fragment>
   );
 }
 
