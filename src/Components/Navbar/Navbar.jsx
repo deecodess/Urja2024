@@ -22,6 +22,9 @@ const Navbar = () => {
         <NavLink exact activeClassName={styles.active_class} to="/contact">
           Contact
         </NavLink>
+        <NavLink exact activeClassName={styles.active_class} to="/events">
+          Events
+        </NavLink>
         <NavLink exact activeClassName={styles.passive_class} to="/">
           Registrations
         </NavLink>
