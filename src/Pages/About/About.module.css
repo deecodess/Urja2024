@@ -1,0 +1,78 @@
+*{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: black;
+}
+
+.Aboutus{
+    color: #6DADF3;
+    font-size: 30px;
+    margin-top: 75px;
+}
+
+
+.History{
+    color: #F26339;
+    font-size: 30px;
+}
+
+.Theme{
+    color: #FCE502;
+    font-size: 30px;
+}
+
+.p1,
+.p2,
+.p3{
+    color: white;
+    text-wrap: wrap;
+    justify-content: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 25px;
+    letter-spacing: 0.17rem;
+    width: 60%; /* Adjust the width of the box as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    box-sizing: border-box; /* Include padding in the total width */
+    text-align: justify; /* Justify the text within the box */
+    
+}
+
+.line1,
+.line2{
+   max-width: 50%;
+   height: 230px;
+   justify-content: center;
+   align-items: center;
+   margin: 10px auto; /* Center the images horizontally and add margin */
+   display: block;
+}
+
+
+.knowmore {
+    background-color: yellow;
+    color: black;
+    font-size: 25px;
+    width: 10%;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    justify-content: center;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 100px;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.button{
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+
+.HistoryLine{
+    margin-top: 1px;
+    padding-top: 0%;
+}
