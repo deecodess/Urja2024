@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Contact.module.css';
-import lionImage from '../../assets/Firefly a golden lion head trophy on a long pillar 12534 2.png' 
+import lionImage from '../../assets/Screenshot 2024-01-14 184428.png' 
 import UrjaLogo from '../../assets/Group 23.png'
 const ContactUs = () => {
 
@@ -12,17 +12,17 @@ const ContactUs = () => {
 
         <form >
           <label >
-            <div>Name</div>
+            <div  id={styles['Name']}>Name</div>
             <input type="text" name="name" id={styles['name-text']}/>
           </label>
           <br />
           <label>
-            <div>Email</div>
+            <div  id={styles['Email']}>Email</div>
             <input type="email" name="email" id={styles['email-text']} />
           </label>
           <br />
           <label>
-            <div>Message</div>
+            <div  id={styles['Message']}>Message</div>
             <textarea name="message" id={styles['message-text']}/>
           </label>
           <br />
@@ -36,8 +36,8 @@ const ContactUs = () => {
         <img src={UrjaLogo} alt="Urja Logo" id={styles['UrjaLogo']} />
       </div>
       <div className={styles["Big-logo"]}>
-       {/* <img src={lionImage} alt="" className={styles['BigImage']} /> */}
-       <p>BIGLION</p>
+       <img src={lionImage} alt="" className={styles['BigImage']} />
+       {/* <p>BIGLION</p> */}
       </div>
     </div>
   );
