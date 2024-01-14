@@ -36,7 +36,7 @@ const ContactUs = () => {
         <img src={UrjaLogo} alt="Urja Logo" id={styles['UrjaLogo']} />
       </div>
       <div className={styles["Big-logo"]}>
-       <img src={lionImage} alt="" className={styles['BigImage']} />
+       <img src={lionImage} alt="" id={styles['BigImage']} />
        {/* <p>BIGLION</p> */}
       </div>
     </div>
