@@ -106,3 +106,40 @@ nav{
     }
 }
 
+@media (max-width: 480px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* background-color: black; */
+        padding: 1rem;
+        z-index: 1000;
+        display: none; /* Hide links by default on small screens */
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .links a {
+        margin: 10px 0;
+    }
+
+    .logo {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hamburger-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+}
+

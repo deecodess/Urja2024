@@ -22,6 +22,7 @@ const Hero = () => {
           <h1>ANNUAL SPORTS FEST OF THAPAR</h1>
         </div>
         <img src={Main} alt="" className={styles.mainImage} />
+        <h1 className={styles.mobileonlytext}>THE ROAR OF EMINENCE</h1>
         <div className={styles.roarSection}>
           <h1 className={styles.firstText}> THE ROAR</h1>
           <img src={Lion_img} alt="" className={styles.lionImage} />
