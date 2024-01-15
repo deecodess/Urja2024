@@ -6,21 +6,18 @@
 
 body {
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-size: 95%;
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
+nav{
+    z-index: 1 !important;
+    position: sticky;
 }
+
 
 /* Center the Navbar */
 .links {
@@ -28,7 +25,15 @@ body {
     gap: 20px;
     margin-top: auto; /* Adjust to move the Navbar to the center */
     margin-bottom: auto; /* Adjust to move the Navbar to the center */
-    justify-content: center; /* Add this to center the links horizontally */
+    justify-content: center;
+    padding: 1rem 0;
+    z-index: 1 !important; /* Add this to center the links horizontally */
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: auto;
 }
 
 .links a {
@@ -60,8 +65,44 @@ body {
     z-index: 1;
 }
 
+
+/* Add this media query for mobile responsiveness */
 @media (max-width: 768px) {
     .links {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 1rem;
+        z-index: 1000;
+        display: none; /* Hide links by default on small screens */
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .links a {
+        margin: 10px 0;
+    }
+
+    .logo {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Add this rule to display the hamburger icon */
+    .hamburger-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 1001;
     }
 }
+

@@ -4,11 +4,13 @@ import line1 from "../../assets/Line 4.png";
 import line2 from "../../assets/Line 7.png";
 import line3 from "../../assets/Line 3.png";
 import { Navigate } from "react-router-dom";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const About = () => {
   return (
     <>
       <div className={styles.All}>
+    <Navbar></Navbar>
         <div className={styles.Aboutus}>
           <h1>ABOUT US</h1>
           <div className={styles.Aboutbackgroundtext}></div>
