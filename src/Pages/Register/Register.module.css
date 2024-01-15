@@ -1,26 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-body {
-    width: 100%;
-    height: 100vh;
-    background-image: url("https://s3-alpha-sig.figma.com/img/c852/0514/a17b9f8ed3f8b807ff12f89639a707f1?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Bq6BHkcgwEKdV7HyNSKzE7ASSnIxSD19vGTjUQF62aq7XzXtWdUfimwpvbbZseK2CglLhaA2bMyrgB-j4mRPX7ho5inuhpvdQJmZPTaodMMeYnuiDg93i5Y3FOQ6p218ohd4mvk9Nemivw7wCiUgWDiQKrpTNP5xvUSfwgUCR5rUhQJrxTb~ZumqwAwECrX~IM8Ala62HQxNhGayAvf8AiAa668jQ6VSOmor2AwpS9GeSB1gVsOxY59eHQ4rJoSb66zuYapSE~Cmivo7OJEdf0L8YYm2FtZuiZVUiuG6uNC7BQSRrZ4vC~rOTbURFBOG7BsVWyZfKpUXHXNAORynkw__");
-    background-size: cover;
-    /* perspective: 1000px; */
-    position: relative;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: -10;
-}
-
 .main-heading {
     width: 100%;
     max-width: 1796px;

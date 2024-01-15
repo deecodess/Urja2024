@@ -1,10 +1,11 @@
 // Register.js
-import React from 'react';
+import React, {Fragment} from 'react';
 import styles from './Register.module.css';
-
+import Navbar from "../../Components/Navbar/Navbar"
 const Register = () => {
   return (
-    <>
+    <Fragment>
+      <Navbar></Navbar>
       <h1 className={styles['main-heading']}> REGISTRATION </h1>
       <h2 className={styles['main-heading-2']}> REGISTRATION </h2>
       <form className={styles['form']} action=''>
@@ -74,7 +75,7 @@ const Register = () => {
         <button type='submit' className={styles['submit-button']}>Submit</button>
  
       </form>
-    </>
+      </Fragment>
   );
 }
 
