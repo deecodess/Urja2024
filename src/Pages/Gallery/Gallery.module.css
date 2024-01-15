@@ -16,6 +16,7 @@
   flex-direction: column;
   height: max-content; /* Adjust as needed */
   width: 100%;
+  overflow: hidden;
 }
 .heading {
   text-align: center;
