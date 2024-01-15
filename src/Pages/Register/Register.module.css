@@ -48,7 +48,7 @@ body::before {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 6vw;
-    top: 4.4vw;
+    top: 13vw;
     left: 25.8vw;
 }
 
@@ -132,7 +132,7 @@ body::before {
 
     .main-heading-2 {
         font-size: 4vw;
-        top: 2vw;
+        top: 7.5vw;
         left: 5%;
     }
 
