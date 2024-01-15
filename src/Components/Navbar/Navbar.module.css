@@ -59,3 +59,9 @@ body {
     max-width: 90%;
     z-index: 1;
 }
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+}

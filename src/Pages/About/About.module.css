@@ -11,19 +11,48 @@
 
 .Aboutus{
     color: #6DADF3;
-    font-size: 30px;
-    margin-top: 75px;
+    font-size: 4vw;
+    margin: 0;
 }
 
 
 .History{
     color: #F26339;
-    font-size: 30px;
+    font-size: 4vw;
 }
 
 .Theme{
     color: #FCE502;
-    font-size: 30px;
+    font-size: 4vw;
+}
+
+.Aboutbackgroundtext::before{
+    content: "ABOUT US";
+    color: transparent;
+    -webkit-text-stroke: 0.13px #2e2c1d;
+    position: absolute;
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
+    padding-bottom: 70px;
+    margin-top: 0;
+}
+.Historybackgroundtext::before{
+    content: "HISTORY";
+    color: transparent;
+    -webkit-text-stroke: 0.13px #2e2c1d;
+    position: absolute;
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
+    padding-bottom: 70px;
+}
+.Themebackgroundtext::before{
+    content: "THEME";
+    color: transparent;
+    -webkit-text-stroke: 0.13px #2e2c1d;
+    position: absolute;
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
+    padding-bottom: 70px;
 }
 
 .p1,
@@ -33,48 +62,82 @@
     text-wrap: wrap;
     justify-content: center;
     font-family: Outfit;
-    font-size: 20px;
+    font-size: 1.6rem;
     font-weight: 500px;
-    line-height: 25px;
+    line-height: 1;
     letter-spacing: 0.17rem;
-    width: 60%; /* Adjust the width of the box as needed */
+    width: 70%; /* Adjust the width of the box as needed */
     margin: 0 auto; /* Center the box horizontally */
     box-sizing: border-box; /* Include padding in the total width */
-    text-align: justify; /* Justify the text within the box */
+    text-align: center; /* Justify the text within the box */
     
 }
 
 .line1,
 .line2{
    max-width: 50%;
-   height: 230px;
+   height: 250px;
    justify-content: center;
    align-items: center;
-   margin: 10px auto; /* Center the images horizontally and add margin */
+   margin: 80px auto; /* Center the images horizontally and add margin */
    display: block;
 }
-
 
 .knowmore {
     background-color: yellow;
     color: black;
     font-size: 25px;
-    width: 10%;
+    width: 15%;
     border-radius: 5px; /* Add border-radius for rounded corners */
     justify-content: center;
     text-align: center;
     margin-left: 1%;
-    margin-top: 100px;
+    margin-top: 5%;
     padding: 5px;
     font-weight: 200;
 }
 
 .button{
     padding-top: 0;
-    padding-bottom: 25px;
+    padding-bottom: 5%;
 }
 
 .HistoryLine{
     margin-top: 1px;
     padding-top: 0%;
+    width: 60%;
 }
+
+.AboutusLine{
+    margin-top: 1%;
+    padding-top: 1%;
+    width: 60%;
+}
+
+.ThemeLine{
+    margin-top: 1px;
+    padding-top: 0%;
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .All{
+      background-size: cover;
+    }
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 18px;
+    }
+    .p1,
+    .p2,
+    .p3 {
+      width: 70%;
+    }
+  
+    .knowmore {
+      width: 50%;
+    }
+  }
