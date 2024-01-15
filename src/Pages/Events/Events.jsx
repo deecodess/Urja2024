@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import styles from "./Events.module.css";
 import sampleImg from "../../assets/urja_logo_black.png";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 // Default theme
 import "@splidejs/react-splide/css";
+import Navbar from "../../Components/Navbar/Navbar";
 
 //Events data
 const data = [
@@ -102,6 +103,8 @@ const Events = () => {
   };
 
   return (
+    <Fragment>
+      <Navbar></Navbar>
     <div className={styles["events-page"]}>
       {/* carousel */}
       <Splide
@@ -186,6 +189,7 @@ const Events = () => {
         </div>
       </Splide>
     </div>
+    </Fragment>
   );
 };
 

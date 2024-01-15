@@ -12,21 +12,11 @@ body {
     background-image: url('../../assets/diyaAsset 1 1.png');
 }
 
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    padding: 5%;
-    /* Responsive padding */
-}
 
 .logo {
     max-width: 50%;
     /* Responsive width */
-    position: absolute;
+    position: absolute !important;
     top: 5%;
     /* Responsive positioning */
     left: 50%;
@@ -36,9 +26,17 @@ body {
 }
 
 .mainImage {
-    width: 80%;
+    width: 50vw !important;
+    position: absolute;
+    z-index: -1;
     /* Responsive width */
-    margin-top: 2em;
+}
+
+.container{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
 .roarSection {
@@ -48,12 +46,17 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: 2em;
+    margin-top: 7em;
 }
+
+.roarSection h1{
+    margin-top: 12rem;
+}
+
 
 .annualTechFest {
     font-family: 'Museo Sans';
-    font-size: 1.5rem;
+    font-size: 0.5rem !important;
     /* Responsive font size */
     font-weight: 200;
     line-height: 1.4;
@@ -64,9 +67,9 @@ body {
 }
 
 .lionImage {
-    width: 60%;
+    width: 30vw !important;
     /* Responsive width */
-    margin-top: 2em;
+    margin-top: 10em;
     background: transparent;
 }
 
@@ -76,7 +79,7 @@ body {
     font-weight: bold;
     color: white;
 }
-
+/* 
 .bg1,
 .bg2 {
     position: fixed;
@@ -85,8 +88,12 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* bg1 behind the content */
     object-fit: cover;
+} */
+
+.bg2{
+    width: 0px !important;
+    height: 0px !important;
 }
 
 /* Media queries for responsiveness */

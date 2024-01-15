@@ -17,6 +17,7 @@ import "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const AutoplayExample = () => {
   const options = {
@@ -63,6 +64,7 @@ const AutoplayExample = () => {
         <title>URJA | Gallery</title>
       </Helmet>
       <div className={classes.container}>
+        <Navbar></Navbar>
         <div className={classes.galleryContainer}>
           <div style={{ position: "relative" }}>
             <div className={classes.bgtext}></div>

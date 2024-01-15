@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './Contact.module.css';
 import lionImage from '../../assets/Screenshot 2024-01-14 184428.png' 
 import UrjaLogo from '../../assets/Group 23.png'
+import Navbar from '../../Components/Navbar/Navbar';
 const ContactUs = () => {
 
 
   return (
+    <Fragment>
+      <Navbar></Navbar>
     <div className={styles["contact-container"]}>
       <div className={styles["form-container"]}>
         <h2 id={styles['header-contactUs']}>CONTACT US</h2>
@@ -40,6 +43,7 @@ const ContactUs = () => {
        {/* <p>BIGLION</p> */}
       </div>
     </div>
+    </Fragment>
   );
 }
 
