@@ -8,9 +8,10 @@ import { Navigate } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <div className="All">
+      <div className={styles.All}>
         <div className={styles.Aboutus}>
           <h1>ABOUT US</h1>
+          <div className={styles.Aboutbackgroundtext}></div>
           <img src={line3} alt="" className={styles.AboutusLine} />
         </div>
         <div className={styles.p1}>
@@ -30,6 +31,7 @@ const About = () => {
 
         <div className={styles.History}>
           <h1>HISTORY</h1>
+          <div className={styles.Historybackgroundtext}></div>
           <img src={line3} alt="" className={styles.HistoryLine} />
         </div>
         <div className={styles.p2}>
@@ -49,6 +51,7 @@ const About = () => {
 
         <div className={styles.Theme}>
           <h1>THEME</h1>
+          <div className={styles.Themebackgroundtext}></div>
           <img src={line3} alt="" className={styles.ThemeLine} />
         </div>
         <div className={styles.p3}>

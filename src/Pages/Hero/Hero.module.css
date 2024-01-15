@@ -1,78 +1,210 @@
-    /* Hero.module.css */
+* {
+    box-sizing: border-box;
+}
 
-    * {
-        box-sizing: border-box;
-    }
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/diyaAsset 1 1.png');
+}
 
-    body {
-        margin: 0;
-        overflow: hidden;
-        background-size: 95%;
-        background-color: black;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 5%;
+    /* Responsive padding */
+}
 
-    .container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 100vh;
-    }
+.logo {
+    max-width: 50%;
+    /* Responsive width */
+    position: absolute;
+    top: 5%;
+    /* Responsive positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centering the logo */
+    z-index: 10;
+}
 
+.mainImage {
+    width: 80%;
+    /* Responsive width */
+    margin-top: 2em;
+}
+
+.roarSection {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically on small screens */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 2em;
+}
+
+.annualTechFest {
+    font-family: 'Museo Sans';
+    font-size: 1.5rem;
+    /* Responsive font size */
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+}
+
+.lionImage {
+    width: 60%;
+    /* Responsive width */
+    margin-top: 2em;
+    background: transparent;
+}
+
+.firstText,
+.secondText {
+    font-family: 'Museo Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.bg1,
+.bg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* bg1 behind the content */
+    object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
     .logo {
-        position: absolute;
-        top: 0%;
-        left: 2%;
-        max-width: 90%;
-        z-index: 1;
+        max-width: 30%;
+        top: 2%;
     }
 
-    .mainImage {
-        max-width: 60%;
-        z-index: 0;
-        margin-top: -80px;
+    .mainImage,
+    .lionImage {
+        width: 50%;
     }
 
     .roarSection {
-        margin-top: 5%;
-        color: white;
-        max-width: 80%;
-        margin: 0 auto;
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        /* Side-by-side on larger screens */
+        justify-content: space-evenly;
+    }
+
+    .firstText,
+    .secondText {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 20%;
+        top: 1%;
+    }
+
+    .mainImage,
+    .lionImage {
+        width: 30%;
     }
 
     .annualTechFest {
-        font-family: sans-serif;
-        font-size: 10px;
-        font-weight: 200;
-        line-height: 24px;
-        letter-spacing: 0.32em;
-        text-align: center;
-        color: white;
-        margin-top: 5%;
+        font-size: 1rem;
     }
+}
 
-    .lionImage {
-        max-width: 62%;
-        margin-top: -210px;
-        z-index: 2;
-    }
-
-    .alongTiger1 {
-        margin-top: -210px;
-        max-width: 65%;
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .annualTechFest h1 {
+        font-size: 2.5vw;
+        /* Scale font size down for tablets */
+        margin-top: 30%;
+        /* Adjust spacing */
     }
 
     .logo {
-        position: fixed;
-        top: 10px; /* Adjust top position as needed */
-        left: 10px; /* Adjust left position as needed */
-        max-width: 90%;
-        z-index: 1;
+        width: 30%;
+        /* Adjust logo size for tablets */
+        margin-top: 2%;
+        /* Adjust logo position */
     }
+
+    .mainImage {
+        width: 50%;
+        /* Adjust main image size for tablets */
+        margin-top: 5%;
+        /* Adjust image position */
+    }
+
+    .roarSection h1 {
+        font-size: 4.5vw;
+        /* Scale font size down for tablets */
+    }
+
+    .lionImage {
+        width: 30%;
+        /* Adjust lion image size for tablets */
+        margin: 3% auto;
+        /* Adjust lion image position */
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+    .navbar {
+        /* Assuming you have a navbar class */
+        font-size: 3vw;
+        /* Scale down navbar items */
+        padding: 2%;
+        /* Adjust navbar padding */
+    }
+
+    .annualTechFest h1 {
+        font-size: 5vw;
+        /* Scale font size down for mobile */
+        margin-top: 30%;
+        /* Adjust spacing */
+    }
+
+    .logo {
+        width: 50%;
+        /* Adjust logo size for mobile */
+        margin-top: 5%;
+        /* Adjust logo position */
+    }
+
+    .mainImage {
+        width: 70%;
+        /* Adjust main image size for mobile */
+        margin-top: 10%;
+        /* Adjust image position */
+    }
+
+    .roarSection h1 {
+        font-size: 6vw;
+        /* Scale font size down for mobile */
+    }
+
+    .lionImage {
+        width: 50%;
+        /* Adjust lion image size for mobile */
+        margin: 5% auto;
+        /* Adjust lion image position */
+    }
+}
