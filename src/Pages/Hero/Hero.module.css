@@ -1,78 +1,117 @@
-    /* Hero.module.css */
+/* Hero.module.css */
 
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        margin: 0;
-        overflow: hidden;
-        background-size: 95%;
-        background-color: black;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/diyaAsset 1 1.png'); /* Replace 'path/to/bg1.png' with the actual path to your bg1 image */
+}
 
-    .container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 100vh;
-    }
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Adjust the min-height as needed */
+    padding: 20px; /* Add padding to create space for content */
+}
 
-    .logo {
-        position: absolute;
-        top: 0%;
-        left: 2%;
-        max-width: 90%;
-        z-index: 1;
-    }
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
+    max-width: 90%;
+    z-index: 1; /* Set a higher z-index value for the logo to make it appear above bg1 */
+}
 
-    .mainImage {
-        max-width: 60%;
-        z-index: 0;
-        margin-top: -80px;
-    }
+.mainImage {
+    max-width: 60%;
+    margin-top: -80px;
+}
 
-    .roarSection {
-        margin-top: 5%;
-        color: white;
-        max-width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+.roarSection {
+    margin-top: 5%;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-    .annualTechFest {
-        font-family: sans-serif;
-        font-size: 10px;
-        font-weight: 200;
-        line-height: 24px;
-        letter-spacing: 0.32em;
-        text-align: center;
-        color: white;
-        margin-top: 5%;
-    }
+.annualTechFest {
+    font-family: 'Museo Sans';
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: white;
+    margin-top: 4%;
+}
 
-    .lionImage {
-        max-width: 62%;
-        margin-top: -210px;
-        z-index: 2;
-    }
+.lionImage {
+    max-width: 60%;
+    margin-top: -190px;
+    background: transparent;
+}
 
-    .alongTiger1 {
-        margin-top: -210px;
-        max-width: 65%;
-    }
+.firstText,
+.secondText {
+    color: white;
+    font-family: 'Museo Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -250px;
+}
 
-    .logo {
-        position: fixed;
-        top: 10px; /* Adjust top position as needed */
-        left: 10px; /* Adjust left position as needed */
-        max-width: 90%;
-        z-index: 1;
-    }
+/* Assuming .firstText and .secondText are h1 elements */
+.firstText,
+.secondText {
+    margin: 0;
+    margin-top: -250px; 
+}
+/* Hero.module.css */
+
+/* ... (other styles) ... */
+
+.bg1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Set a lower z-index value for bg1 to make it appear behind the content */
+}
+
+.bg1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Set a higher z-index value for bg2 to make it appear on top of bg1 */
+}
+
+.bg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
