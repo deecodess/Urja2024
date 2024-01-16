@@ -16,7 +16,7 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #FFEE59;
     z-index: -1;
-    top:-2vw;
+    /* top:-2vw; */
 }
 
 .main-heading-2 {

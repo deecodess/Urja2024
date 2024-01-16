@@ -1,11 +1,14 @@
 import React from 'react';
-import Urja_logo from '../../assets/Group 23.png';
 import Main from '../../assets/Group 19.png';
 import Lion_img from '../../assets/Firefly a golden lion head trophy on a long pillar 12534 2.png';
 import styles from './Hero.module.css';
 import Navbar from '../../Components/Navbar/Navbar';
-import bg1 from '../../assets/Group 21 (1).png';
 import bg2 from '../../assets/diyaAsset 1 1.png';
+import About from '../About/About.jsx';
+import Events from '../Events/Events.jsx';
+import Gallery from '../Gallery/Gallery.jsx';
+import Register from '../Register/Register.jsx';
+import Contact from '../Contact/Contact.jsx'
 const Hero = () => {
   return (
     <div>
@@ -29,6 +32,13 @@ const Hero = () => {
           <h1 className={styles.secondText}> OF EMINENCE</h1>
         </div>
 
+      </div>
+      <div className={styles.mobileviewonly}>
+        <About/>
+        <Events/>
+        <Gallery/>
+        <Register/>
+        <Contact/>
       </div>
     </div>
   );

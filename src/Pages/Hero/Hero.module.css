@@ -27,6 +27,7 @@ body {
 
 .mainImage {
     width: 50vw !important;
+    height:auto;
     position: absolute;
     z-index: -1;
     /* Responsive width */
@@ -105,7 +106,9 @@ body {
     height: 0px !important;
 }
 
-
+.mobileonlytext{
+    display:none;
+}
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
     .logo {
@@ -128,6 +131,9 @@ body {
     .secondText {
         margin-top: 0;
     }
+    .mobileviewonly{
+        display:none;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -143,9 +149,6 @@ body {
 
     .annualTechFest {
         font-size: 1rem;
-    }
-    .mobileonlytext{
-        display:none;
     }
 }
 
@@ -213,5 +216,8 @@ body {
         color:white;
         font-size: 7vw;
         margin-top:60%;
+    }
+    .mobileonlytext{
+        display:flex;
     }
 }
