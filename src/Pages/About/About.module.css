@@ -75,7 +75,7 @@
 
 .line1,
 .line2{
-   max-width: 50%;
+   max-width: 0.7%;
    height: 250px;
    justify-content: center;
    align-items: center;
@@ -98,7 +98,7 @@
 }
 
 .button{
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 5%;
 }
 
@@ -120,21 +120,33 @@
     width: 60%;
 }
 
+.video {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: none; /* Hide the video by default */
+  }
+  
+  .button:hover .video {
+    display: block; /* Show the video when the button is hovered */
+  }
+  
+
 @media only screen and (max-width: 768px) {
     /* Styles for screens smaller than 768px */
     .All{
       background-size: cover;
+      position: relative;
     }
     
     .Aboutbackgroundtext::before,
     .Historybackgroundtext::before,
     .Themebackgroundtext::before{
-        padding-bottom: 18px;
+        padding-bottom: 22px;
     }
     .p1,
     .p2,
     .p3 {
-      width: 70%;
+      width: 90%;
     }
   
     .knowmore {
