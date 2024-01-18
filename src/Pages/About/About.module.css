@@ -29,7 +29,7 @@
 .Aboutbackgroundtext::before{
     content: "ABOUT US";
     color: transparent;
-    -webkit-text-stroke: 0.13px #2e2c1d;
+    -webkit-text-stroke: 0.13px #2d3339;
     position: absolute;
     left: 50%; /* Adjust the left position as needed */
     transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
@@ -39,7 +39,7 @@
 .Historybackgroundtext::before{
     content: "HISTORY";
     color: transparent;
-    -webkit-text-stroke: 0.13px #2e2c1d;
+    -webkit-text-stroke: 0.13px #312724;
     position: absolute;
     left: 50%; /* Adjust the left position as needed */
     transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
@@ -130,19 +130,13 @@
     display: block; /* Show the video when the button is hovered */
   }
   
-
-@media only screen and (max-width: 768px) {
-    /* Styles for screens smaller than 768px */
+  @media  (min-width: 320px) and (max-width: 1030px)   {
+    
     .All{
       background-size: cover;
       position: relative;
     }
     
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 22px;
-    }
     .p1,
     .p2,
     .p3 {
@@ -151,5 +145,110 @@
   
     .knowmore {
       width: 50%;
+    }
+  }
+
+@media  (min-width:320px) and  (max-width: 350px) {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 19px;
+        transform: translate(-50%, -50%) scale(3.8);
+    }
+  }
+
+  @media  (min-width:350px) and  (max-width: 410px) {
+    
+    .Aboutbackgroundtext::before{
+        padding-bottom: 21.5px;
+        transform: translate(-50%, -50%) scale(3.7);
+    }
+
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 22.5px;
+        transform: translate(-50%, -50%) scale(3.8);
+    }
+  }
+
+  @media  (min-width:410px) and  (max-width: 420px) {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 26.5px;
+        transform: translate(-50%, -50%) scale(3.6);
+    }
+  }
+
+  @media  (min-width:420px) and  (max-width: 480px) {
+
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 27.3px;
+        transform: translate(-50%, -50%) scale(3.6);
+    }
+  }
+
+  @media  (min-width:480px) and  (max-width: 530px) {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 30px;
+        transform: translate(-50%, -50%) scale(3.6);
+    }
+  }
+
+  @media  (min-width:530px) and  (max-width: 600px) {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 33px;
+        transform: translate(-50%, -50%) scale(3.6);
+    }
+  }
+
+  @media  (min-width: 600px)  and  (max-width: 630px) {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 36px;
+        transform: translate(-50%, -50%) scale(3.7);
+    }
+  }
+
+  @media  (min-width: 630px)  and  (max-width: 760px) {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 42px;
+        transform: translate(-50%, -50%) scale(3.7);
+    }
+  }
+
+  @media  (min-width: 760px) and (max-width: 870px)   {
+    
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 48px;
+        transform: translate(-50%, -50%) scale(3.7);
+    }
+    
+  }
+
+  @media  (min-width: 870px) and (max-width: 1040px)   {
+
+    .Aboutbackgroundtext::before,
+    .Historybackgroundtext::before,
+    .Themebackgroundtext::before{
+        padding-bottom: 55px;
+        transform: translate(-50%, -50%) scale(3.7);
     }
   }
