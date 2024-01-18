@@ -8,15 +8,14 @@ import {
 } from "./GenerateSlides";
 import classes from "./Gallery.module.css";
 import { Helmet } from "react-helmet";
-// Default theme
-import "@splidejs/react-splide/css";
-
-// or other themes
-import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";
+<<<<<<< Updated upstream
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
+=======
+import Navbar from "../../Components/Navbar/Navbar";
+>>>>>>> Stashed changes
 
 const AutoplayExample = () => {
   const options = {
@@ -31,28 +30,28 @@ const AutoplayExample = () => {
     breakpoints: {
       640: {
         perPage: 1,
-        width: "100%", // Set the width for screens with width less than 640px
-        height: "10rem", // Set the height for screens with width less than 640px
+        width: "100%",
+        height: "10rem",
       },
       768: {
         perPage: 2,
-        width: "100%", // Set the width for screens with width between 640px and 767px
-        height: "12rem", // Set the height for screens with width between 640px and 767px
+        width: "100%",
+        height: "8rem",
       },
       1024: {
         perPage: 3,
-        width: "100%", // Set the width for screens with width between 768px and 1023px
-        height: "15rem", // Set the height for screens with width between 768px and 1023px
+        width: "100%",
+        height: "6rem",
       },
       1440: {
         perPage: 4,
-        width: "100%", // Set the width for screens with width between 1024px and 1439px
-        height: "18rem", // Set the height for screens with width between 1024px and 1439px
+        width: "100%",
+        height: "10rem",
       },
       2560: {
         perPage: 4,
-        width: "100%", // Set the width for screens with width between 1024px and 1439px
-        height: "18rem", // Set the height for screens with width between 1024px and 1439px
+        width: "100%",
+        height: "11rem",
       },
     },
   };
@@ -104,12 +103,12 @@ const AutoplayExample = () => {
                     key={slide.src}
                     data-splide-interval="1050"
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
-                      objectFit: "contain",
-                      maxWidth: "80vw",
-                      maxHeight: "60vh",
+                      // objectFit: "contain",
+                      // maxWidth: "80vw",
+                      // maxHeight: "60vh",
                     }}
                   >
                     <div
@@ -117,17 +116,14 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
                       }}
                     >
                       <img
                         src={slide.src}
                         alt={slide.alt}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
@@ -171,7 +167,7 @@ const AutoplayExample = () => {
                     key={slide.src}
                     data-splide-interval="1050"
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
                       objectFit: "contain",
@@ -184,17 +180,14 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
                       }}
                     >
                       <img
                         src={slide.src}
                         alt={slide.alt}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
@@ -238,7 +231,7 @@ const AutoplayExample = () => {
                     key={slide.src}
                     data-splide-interval="1050"
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
                       objectFit: "contain",
@@ -251,17 +244,14 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
                       }}
                     >
                       <img
                         src={slide.src}
                         alt={slide.alt}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
@@ -305,7 +295,7 @@ const AutoplayExample = () => {
                     key={slide.src}
                     data-splide-interval="1050"
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
                       objectFit: "contain",
@@ -318,17 +308,14 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
                       }}
                     >
                       <img
                         src={slide.src}
                         alt={slide.alt}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"

@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
+.container {
+    margin-top: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    text-align: center;
+    background-color: #000;
+    position: relative;
+    height: fit-content;
+    overflow: scroll;
+}
+
 .events-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #171717;
-    background-image: url(background.svg);
 }
 
 img {
@@ -18,7 +29,8 @@ img {
 .slide-name-large {
     position: absolute;
     bottom: 8px;
-    left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
     font-size: 24px;
     padding: 5px;
@@ -28,7 +40,8 @@ img {
 .slide-name-small {
     position: absolute;
     bottom: 40px;
-    left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
     font-size: 22px;
     padding: 5px;
@@ -40,6 +53,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.5rem;
     color: #fff;
     font-family: 'Noto Sans JP', sans-serif;
@@ -61,6 +75,7 @@ img {
 /* slider-progress-bar */
 .my-slider-progress {
     background: #4B4B4B;
+    margin-bottom: 1%;
 }
 
 .my-slider-progress-bar {
