@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./About.module.css";
 import line1 from "../../assets/Line 4.png";
 import line2 from "../../assets/Line 7.png";
 import line3 from "../../assets/Line 3.png";
-import { Navigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
-import urja_aftermovie_final from "../../assets/urja_aftermovie_final.mp4";
 
 const About = () => {
-  const [isClicked, setIsClicked] = useState(false);
   return (
     <>
       <div className={styles.All}>
@@ -70,21 +67,6 @@ const About = () => {
             competitiveness like never before. Train yourself and get ready to
             go out, all guns blazing, in the quest for victory!
           </p>
-        </div>
-
-        <div className={styles.button}>
-          <button
-            className={styles.knowmore}
-            onClick={() => setIsClicked(true)}
-          >
-            Know More
-          </button>
-          {isClicked && (
-            <video className={styles.video} controls>
-              <source src={urja_aftermovie_final} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
         </div>
       </div>
     </>

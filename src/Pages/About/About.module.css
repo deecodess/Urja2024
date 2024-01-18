@@ -120,16 +120,6 @@
     width: 60%;
 }
 
-.video {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    display: none; /* Hide the video by default */
-  }
-  
-  .button:hover .video {
-    display: block; /* Show the video when the button is hovered */
-  }
-  
   @media  (min-width: 320px) and (max-width: 1030px)   {
     
     .All{
