@@ -9,13 +9,7 @@ import {
 import classes from "./Gallery.module.css";
 import { Helmet } from "react-helmet";
 import "@splidejs/react-splide/css/sea-green";
-<<<<<<< Updated upstream
-
-// or only core styles
-import "@splidejs/react-splide/css/core";
-=======
 import Navbar from "../../Components/Navbar/Navbar";
->>>>>>> Stashed changes
 
 const AutoplayExample = () => {
   const options = {
@@ -62,6 +56,7 @@ const AutoplayExample = () => {
         <title>URJA | Gallery</title>
       </Helmet>
       <div className={classes.container}>
+        <Navbar />
         <div className={classes.galleryContainer}>
           <div style={{ position: "relative" }}>
             <div className={classes.bgtext}></div>
