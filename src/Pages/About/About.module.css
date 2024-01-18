@@ -126,7 +126,7 @@
       background-size: cover;
       position: relative;
     }
-    
+
     .p1,
     .p2,
     .p3 {
@@ -177,7 +177,7 @@
     .Aboutbackgroundtext::before,
     .Historybackgroundtext::before,
     .Themebackgroundtext::before{
-        padding-bottom: 27.3px;
+        padding-bottom: 27.1px;
         transform: translate(-50%, -50%) scale(3.6);
     }
   }
