@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./About.module.css";
 import line1 from "../../assets/Line 4.png";
 import line2 from "../../assets/Line 7.png";
 import line3 from "../../assets/Line 3.png";
-import { Navigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
-import urja_aftermovie_final from "../../assets/urja_aftermovie_final.mp4";
 
 const About = () => {
-  const [isClicked, setIsClicked] = useState(false);
   return (
     <>
       <div className={styles.All}>
@@ -20,15 +17,16 @@ const About = () => {
         </div>
         <div className={styles.p1}>
           <p>
-            Urja is one of the biggest sports extravaganzas in the Country, and
-            We are back with the 6th edition this year. Thapar University's
-            annual sports fest has been a stage for college teams to showcase
-            their supremacy by competing amongst the nation's best talents. TU
-            has had a rich history of hosting magnificent and renowned fests ,
-            encompassing innumerable institutes across India. After a three-year
-            gap, the fest is set to witness the thrill, excitement, and
-            competitiveness like never before. Train yourself and get ready to
-            go out, all guns blazing, in the quest for victory!
+            Step into URJA, the ultimate spectacle of sports brilliance! Get
+            ready for the grandeur of the next edition at Thapar University,
+            where college teams illuminate the stage amid the nation's brightest
+            talents. With TIET’s legacy of hosting standout fests across India,
+            this promises to be an unmissable fusion of thrill, excitement, and
+            friendly competition. Imagine yourself at the epicenter of this
+            extraordinary experience! Train up, rally your spirit, and join us
+            in the pursuit of victory. URJA calls you to an unmatched blend of
+            simplicity and grandeur, ensuring an experience beyond compare! Your
+            adventure awaits!
           </p>
           <img src={line1} alt="" className={styles.line1} />
         </div>
@@ -40,15 +38,16 @@ const About = () => {
         </div>
         <div className={styles.p2}>
           <p>
-            Urja is one of the biggest sports extravaganzas in the Country, and
-            We are back with the 6th edition this year. Thapar University's
-            annual sports fest has been a stage for college teams to showcase
-            their supremacy by competing amongst the nation's best talents. TU
-            has had a rich history of hosting magnificent and renowned fests ,
-            encompassing innumerable institutes across India. After a three-year
-            gap, the fest is set to witness the thrill, excitement, and
-            competitiveness like never before. Train yourself and get ready to
-            go out, all guns blazing, in the quest for victory!
+            Step into URJA, the ultimate spectacle of sports brilliance! Get
+            ready for the grandeur of the next edition at Thapar University,
+            where college teams illuminate the stage amid the nation's brightest
+            talents. With TIET’s legacy of hosting standout fests across India,
+            this promises to be an unmissable fusion of thrill, excitement, and
+            friendly competition. Imagine yourself at the epicenter of this
+            extraordinary experience! Train up, rally your spirit, and join us
+            in the pursuit of victory. URJA calls you to an unmatched blend of
+            simplicity and grandeur, ensuring an experience beyond compare! Your
+            adventure awaits!
           </p>
           <img src={line2} alt="" className={styles.line2} />
         </div>
@@ -60,31 +59,17 @@ const About = () => {
         </div>
         <div className={styles.p3}>
           <p>
-            Urja is one of the biggest sports extravaganzas in the Country, and
-            We are back with the 6th edition this year. Thapar University's
-            annual sports fest has been a stage for college teams to showcase
-            their supremacy by competing amongst the nation's best talents. TU
-            has had a rich history of hosting magnificent and renowned fests ,
-            encompassing innumerable institutes across India. After a three-year
-            gap, the fest is set to witness the thrill, excitement, and
-            competitiveness like never before. Train yourself and get ready to
-            go out, all guns blazing, in the quest for victory!
+            Step into URJA, the ultimate spectacle of sports brilliance! Get
+            ready for the grandeur of the next edition at Thapar University,
+            where college teams illuminate the stage amid the nation's brightest
+            talents. With TIET’s legacy of hosting standout fests across India,
+            this promises to be an unmissable fusion of thrill, excitement, and
+            friendly competition. Imagine yourself at the epicenter of this
+            extraordinary experience! Train up, rally your spirit, and join us
+            in the pursuit of victory. URJA calls you to an unmatched blend of
+            simplicity and grandeur, ensuring an experience beyond compare! Your
+            adventure awaits!
           </p>
-        </div>
-
-        <div className={styles.button}>
-          <button
-            className={styles.knowmore}
-            onClick={() => setIsClicked(true)}
-          >
-            Know More
-          </button>
-          {isClicked && (
-            <video className={styles.video} controls>
-              <source src={urja_aftermovie_final} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
         </div>
       </div>
     </>

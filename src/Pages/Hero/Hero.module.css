@@ -106,11 +106,34 @@ body {
     height: 0px !important;
 }
 
+.videoheading{
+    font-family: 'Museo Sans';
+    font-size: 2rem !important;
+    /* Responsive font size */
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+    z-index: 2;
+}
+
+.video {
+    width: 100%; /* Adjust the width as needed */
+    height:auto; /* Maintain the aspect ratio */
+    display:block;
+    z-index: 1;
+  }
+
 .mobileonlytext{
     display:none;
 }
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
+    .annualTechFest{
+        margin-top: 0;
+    }
     .logo {
         max-width: 30%;
         top: 2%;
@@ -119,6 +142,7 @@ body {
     .mainImage,
     .lionImage {
         width: 50%;
+        padding-top: 12%;
     }
 
     .roarSection {
@@ -145,6 +169,7 @@ body {
     .mainImage,
     .lionImage {
         width: 30%;
+        padding-top: 5px;
     }
 
     .annualTechFest {
