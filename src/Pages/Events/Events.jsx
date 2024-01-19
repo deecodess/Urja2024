@@ -10,28 +10,33 @@ import Navbar from "../../Components/Navbar/Navbar";
 const data = [
   {
     name: "Chess",
-    src: sampleImg,
-    description: "Chess blitz is a fast-paced and intense variant of chess where players are allotted a very limited amount of time, typically ranging from three to five minutes per side for the entire game",
+    src: ChessBlitz,
+    description:
+      "Chess blitz is a fast-paced and intense variant of chess where players are allotted a very limited amount of time, typically ranging from three to five minutes per side for the entire game",
   },
   {
     name: "Cricket",
     src: sampleImg,
-    description: "Cricket is a bat-and-ball sport played between two teams, involving batting, bowling, and fielding. The objective is to score runs by hitting the ball and dismiss opponents to secure victory.",
+    description:
+      "Cricket is a bat-and-ball sport played between two teams, involving batting, bowling, and fielding. The objective is to score runs by hitting the ball and dismiss opponents to secure victory.",
   },
   {
     name: "Football",
     src: sampleImg,
-    description: "Football is a team sport played between two sides aiming to score goals by getting a ball into the opposing team's net. It involves skillful ball control, strategic plays, and teamwork",
+    description:
+      "Football is a team sport played between two sides aiming to score goals by getting a ball into the opposing team's net. It involves skillful ball control, strategic plays, and teamwork",
   },
   {
     name: "Basketball",
     src: sampleImg,
-    description: "Basketball is a fast-paced team sport played on a rectangular court, where teams aim to score points by shooting a ball through the opponent's hoop. Dribbling, passing, and strategic plays are integral to the game.",
+    description:
+      "Basketball is a fast-paced team sport played on a rectangular court, where teams aim to score points by shooting a ball through the opponent's hoop. Dribbling, passing, and strategic plays are integral to the game.",
   },
   {
     name: "Atheletics",
     src: sampleImg,
-    description: "Athletics is a broad category of sporting events that includes track and field disciplines such as running, jumping, and throwing. Athletes showcase their physical prowess, speed, and strength in a variety of competitions.",
+    description:
+      "Athletics is a broad category of sporting events that includes track and field disciplines such as running, jumping, and throwing. Athletes showcase their physical prowess, speed, and strength in a variety of competitions.",
   },
 ];
 
@@ -103,93 +108,95 @@ const Events = () => {
   };
 
   return (
-    <Fragment>
-      <Navbar></Navbar>
-    <div className={styles["events-page"]}>
-      {/* carousel */}
-      <Splide
-        hasTrack={false}
-        options={{
-          perPage: 3,
-          pagination: false,
-          height: "25rem",
-          width: "90%",
-          rewind: true,
-          focus: "center",
-          type: "loop",
-          gap: "15%",
-          breakpoints: {
-            640: {
-              width: "80%",
-              perPage: 1,
-              arrows: false,
-            },
-            767: {
-              width: "100%",
-              perPage: 2,
-              arrows: false,
-            },
-          },
-        }}
-        onMoved={updateCenterIndex}
-      >
-        <SplideTrack>
-          {data.map((slide, index) => (
-            <SplideSlide key={index}>
-              <img
-                src={slide.src}
-                alt={slide.name}
-                style={index === centerIndex ? largeImage : smallerImage}
-              />
-              <span
-                className={
-                  index === centerIndex
-                    ? styles["slide-name-large"]
-                    : styles["slide-name-small"]
-                }
+    <>
+      <div className={styles["container"]}>
+        <Navbar />
+        <div className={styles["events-page"]}>
+          {/* carousel */}
+          <Splide
+            hasTrack={false}
+            options={{
+              perPage: 3,
+              pagination: false,
+              height: "25rem",
+              width: "90%",
+              rewind: true,
+              focus: "center",
+              type: "loop",
+              gap: "15%",
+              breakpoints: {
+                640: {
+                  width: "80%",
+                  perPage: 1,
+                  arrows: false,
+                },
+                767: {
+                  width: "100%",
+                  perPage: 2,
+                  arrows: false,
+                },
+              },
+            }}
+            onMoved={updateCenterIndex}
+          >
+            <SplideTrack>
+              {data.map((slide, index) => (
+                <SplideSlide key={index}>
+                  <img
+                    src={slide.src}
+                    alt={slide.name}
+                    style={index === centerIndex ? largeImage : smallerImage}
+                  />
+                  <span
+                    className={
+                      index === centerIndex
+                        ? styles["slide-name-large"]
+                        : styles["slide-name-small"]
+                    }
+                  >
+                    {slide.name}
+                  </span>
+                </SplideSlide>
+              ))}
+            </SplideTrack>
+
+            {/* slide description */}
+            <div className={styles["description"]}>
+              <p>{data[centerIndex].description}</p>
+            </div>
+
+            {/* rulebook */}
+            <div className={styles["rulebook"]}>
+              <p>Rulebook</p>
+            </div>
+
+            {/* progress bar */}
+            <div className={styles["my-slider-progress"]}>
+              <div
+                className={styles["my-slider-progress-bar"]}
+                style={progressBarStyle}
+              ></div>
+            </div>
+
+            {/* arrow buttons */}
+            <div className="splide__arrows">
+              <button
+                className="splide__arrow splide__arrow--prev"
+                style={leftButtonStyles}
               >
-                {slide.name}
-              </span>
-            </SplideSlide>
-          ))}
-        </SplideTrack>
-
-        {/* slide description */}
-        <div className={styles["description"]}>
-          <p>{data[centerIndex].description}</p>
+                <span style={leftArrow}></span>
+              </button>
+              <button
+                className="splide__arrow splide__arrow--next"
+                style={rightButtonStyles}
+              >
+                <span style={rightArrow}></span>
+              </button>
+            </div>
+          </Splide>
         </div>
-
-        {/* rulebook */}
-        <div className={styles["rulebook"]}>
-          <p>Rulebook</p>
-        </div>
-
-        {/* progress bar */}
-        <div className={styles["my-slider-progress"]}>
-          <div
-            className={styles["my-slider-progress-bar"]}
-            style={progressBarStyle}
-          ></div>
-        </div>
-
-        {/* arrow buttons */}
-        <div className="splide__arrows">
-          <button
-            className="splide__arrow splide__arrow--prev"
-            style={leftButtonStyles}
-          >
-            <span style={leftArrow}></span>
-          </button>
-          <button
-            className="splide__arrow splide__arrow--next"
-            style={rightButtonStyles}
-          >
-            <span style={rightArrow}></span>
-          </button>
-        </div>
-      </Splide>
-    </div>
-    </Fragment>
+      </div>
+    </>
   );
 };
 
