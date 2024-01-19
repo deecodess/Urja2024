@@ -40,29 +40,17 @@ const AutoplayExample = () => {
       1024: {
         perPage: 3,
         width: "100%",
-<<<<<<< Updated upstream
-        height: "6rem",
-=======
         height: "13rem",
->>>>>>> Stashed changes
       },
       1440: {
         perPage: 4,
         width: "100%",
-<<<<<<< Updated upstream
-        height: "10rem",
-=======
         height: "13rem",
->>>>>>> Stashed changes
       },
       2560: {
         perPage: 4,
         width: "100%",
-<<<<<<< Updated upstream
-        height: "11rem",
-=======
         height: "13rem",
->>>>>>> Stashed changes
       },
     },
   };
@@ -118,10 +106,7 @@ const AutoplayExample = () => {
                       // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
-<<<<<<< Updated upstream
-=======
                       objectFit: "cover",
->>>>>>> Stashed changes
                       // objectFit: "contain",
                       // maxWidth: "80vw",
                       // maxHeight: "60vh",
@@ -132,10 +117,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-<<<<<<< Updated upstream
-=======
                         height: "100%",
->>>>>>> Stashed changes
                       }}
                     >
                       <img
@@ -198,10 +180,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-<<<<<<< Updated upstream
-=======
                         height: "100%",
->>>>>>> Stashed changes
                       }}
                     >
                       <img
@@ -264,10 +243,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-<<<<<<< Updated upstream
-=======
                         height: "100%",
->>>>>>> Stashed changes
                       }}
                     >
                       <img
@@ -330,10 +306,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-<<<<<<< Updated upstream
-=======
                         height: "100%",
->>>>>>> Stashed changes
                       }}
                     >
                       <img
