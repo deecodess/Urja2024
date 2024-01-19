@@ -1,0 +1,267 @@
+<<<<<<< Updated upstream
+=======
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/diyaAsset 1 1.png');
+}
+
+
+.logo {
+    max-width: 50%;
+    /* Responsive width */
+    position: absolute !important;
+    top: 5%;
+    /* Responsive positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centering the logo */
+    z-index: 10;
+}
+
+.mainImage {
+    width: 50vw !important;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    /* Responsive width */
+}
+
+.container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.roarSection {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically on small screens */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 7em;
+}
+
+.roarSection h1 {
+    margin-top: 12rem;
+    z-index: 4;
+}
+
+.firstText {
+    margin-left: 10%;
+    margin-right: -10%;
+}
+
+.secondText {
+    margin-right: 10%;
+    margin-left: -10%;
+}
+
+
+.annualTechFest {
+    font-family: 'Museo Sans';
+    font-size: 0.5rem !important;
+    /* Responsive font size */
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+}
+
+.lionImage {
+    width: 30vw !important;
+    /* Responsive width */
+    margin-top: 4em;
+    background: transparent;
+}
+
+.firstText,
+.secondText {
+    font-family: 'Museo Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* 
+.bg1,
+.bg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+} */
+
+.bg2 {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.videoheading {
+    font-family: 'Museo Sans';
+    font-size: 2rem !important;
+    /* Responsive font size */
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+    z-index: 2;
+}
+
+.video {
+    width: 100%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    z-index: 1;
+}
+
+.mobileonlytext {
+    display: none;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .annualTechFest {
+        margin-top: 0;
+    }
+
+    .logo {
+        max-width: 30%;
+        top: 2%;
+    }
+
+    .mainImage,
+    .lionImage {
+        width: 50%;
+        padding-top: 12%;
+    }
+
+    .roarSection {
+        flex-direction: row;
+        /* Side-by-side on larger screens */
+        justify-content: space-evenly;
+    }
+
+    .firstText,
+    .secondText {
+        margin-top: 0;
+    }
+
+    .mobileviewonly {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 20%;
+        top: 1%;
+    }
+
+    .mainImage,
+    .lionImage {
+        width: 30%;
+        padding-top: 5px;
+    }
+
+    .annualTechFest {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .annualTechFest h1 {
+        font-size: 2.5vw;
+        /* Scale font size down for tablets */
+        margin-top: 30%;
+        /* Adjust spacing */
+    }
+
+    .logo {
+        width: 30%;
+        /* Adjust logo size for tablets */
+        margin-top: 2%;
+        /* Adjust logo position */
+    }
+
+    .mainImage {
+        width: 50%;
+        /* Adjust main image size for tablets */
+        margin-top: 5%;
+        /* Adjust image position */
+    }
+
+    .roarSection h1 {
+        font-size: 4.5vw;
+        /* Scale font size down for tablets */
+    }
+
+    .lionImage {
+        width: 30%;
+        /* Adjust lion image size for tablets */
+        margin: 3% auto;
+        /* Adjust lion image position */
+    }
+}
+
+@media (max-width: 480px) {
+    .annualTechFest h1 {
+        font-size: 5vw;
+        margin-top: 30%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .logo {
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    .mainImage {
+        width: 90% !important;
+        margin-top: 60% !important;
+    }
+
+    .roarSection {
+        width: 100%;
+    }
+
+    .roarSection h1 {
+        display: none;
+        /* font-size: 8vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    }
+
+    .lionImage {
+        width: 100% !important;
+    }
+
+    .mobileonlytext {
+        color: white;
+        font-size: 7vw;
+        margin-top: 60%;
+    }
+
+    .mobileonlytext {
+        display: flex;
+    }
+}
+>>>>>>> Stashed changes

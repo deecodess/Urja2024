@@ -9,7 +9,11 @@
     text-align: center;
     background-color: #000;
     position: relative;
+<<<<<<< Updated upstream
     height: fit-content;
+=======
+    height: 100%;
+>>>>>>> Stashed changes
     overflow: scroll;
 }
 
@@ -43,9 +47,10 @@ img {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     padding: 5px;
     font-family: 'Noto Sans JP', sans-serif;
+    opacity: 0.5;
 }
 
 /* slide-description */
