@@ -1,5 +1,19 @@
+
+.container {
+    margin-top: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    text-align: center;
+    background-color: #000;
+    position: relative;
+    height: 100%;
+}
+
+
 .contact-container{
-  background-color: black;
+  /* background-color: black; */
   color: white;
 }
 #name{
@@ -393,11 +407,12 @@ margin-right: 64%;
 .Big-logo{
     display: none;
 }
-.logo-container {
+/* .logo-container {
   display: none;
-}
+} */
 .contact-container {
   justify-content: center;
+  flex-direction: column;
 }
 .form-container {
   /* flex: 1; */
@@ -453,11 +468,12 @@ margin-right: 85%;
 .Big-logo{
     display: none;
 }
-.logo-container {
+/* .logo-container {
   display: none;
-}
+} */
 .contact-container {
   justify-content: center;
+  flex-direction: column;
 }
 .form-container {
   /* flex: 1; */
