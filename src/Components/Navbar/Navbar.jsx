@@ -25,6 +25,9 @@ const Navbar = () => {
         <NavLink exact activeClassName={styles.active_class} to="/events">
           Events
         </NavLink>
+        <NavLink exact activeClassName={styles.active_class} to="/team">
+          Team
+        </NavLink>
         <NavLink exact activeClassName={styles.active_class} to="/gallery">
           Gallery
         </NavLink>
