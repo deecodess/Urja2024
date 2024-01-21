@@ -1,244 +1,329 @@
 .All{
-    margin-top: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    text-align: center;
-    background-color: black;
-    position: relative;
+  margin-top: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  background-color: black;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.Aboutus{
-    color: #6DADF3;
-    font-size: 4vw;
-    margin: 0;
+.aboutheading{
+text-align: center;
+color: #6dadf3;
+/* font-family: "veto"; */
+font-size: 6.5rem;
+margin-bottom: 0;
+margin-top: 4.5%;
+position: relative; /* Ensure stacking context for z-index to work */
+z-index: 2;
 }
 
 
-.History{
-    color: #F26339;
-    font-size: 4vw;
+.historyheading{
+text-align: center;
+color: #f26339;
+/* font-family: "veto"; */
+font-size: 6.5rem;
+margin-bottom: 0;
+margin-top: 4.5%;
+position: relative; /* Ensure stacking context for z-index to work */
+z-index: 2;
 }
 
-.Theme{
-    color: #FCE502;
-    font-size: 4vw;
+.themeheading{
+text-align: center;
+color: #fce502;
+/* font-family: "veto"; */
+font-size: 6.5rem;
+margin-bottom: 0;
+margin-top: 4.5%;
+position: relative; /* Ensure stacking context for z-index to work */
+z-index: 2;
 }
 
 .Aboutbackgroundtext::before{
-    content: "ABOUT US";
-    color: transparent;
-    -webkit-text-stroke: 0.13px #2d3339;
-    position: absolute;
-    left: 50%; /* Adjust the left position as needed */
-    transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
-    padding-bottom: 70px;
-    margin-top: 0;
+content: "ABOUT US";
+color: transparent; /* Set text color to transparent */
+-webkit-text-stroke: 0.13px #1b2127;
+/* text-shadow: 0px 2px 4px red; */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(13);
+padding-bottom: 0.55%;
 }
 .Historybackgroundtext::before{
-    content: "HISTORY";
-    color: transparent;
-    -webkit-text-stroke: 0.13px #312724;
-    position: absolute;
-    left: 50%; /* Adjust the left position as needed */
-    transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
-    padding-bottom: 70px;
+  content: "HISTORY";
+  color: transparent;
+  -webkit-text-stroke: 0.13px #2d2321;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%) scale(13); /* Center the text both vertically and horizontally */
+  padding-bottom: 0.55%;
 }
 .Themebackgroundtext::before{
-    content: "THEME";
-    color: transparent;
-    -webkit-text-stroke: 0.13px #2e2c1d;
-    position: absolute;
-    left: 50%; /* Adjust the left position as needed */
-    transform: translate(-50%, -50%) scale(4.5); /* Center the text both vertically and horizontally */
-    padding-bottom: 70px;
+  content: "THEME";
+  color: transparent;
+  -webkit-text-stroke: 0.13px #29271b;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%) scale(13); /* Center the text both vertically and horizontally */
+  padding-bottom: 0.55%;
 }
 
 .p1,
 .p2,
 .p3{
-    color: white;
-    text-wrap: wrap;
-    justify-content: center;
-    font-family: Outfit;
-    font-size: 1.6rem;
-    font-weight: 500px;
-    line-height: 1;
-    letter-spacing: 0.17rem;
-    width: 70%; /* Adjust the width of the box as needed */
-    margin: 0 auto; /* Center the box horizontally */
-    box-sizing: border-box; /* Include padding in the total width */
-    text-align: center; /* Justify the text within the box */
-    
+  color: white;
+  text-wrap: wrap;
+  justify-content: center;
+  font-family: Outfit;
+  font-size: 1.6rem;
+  font-weight: 500px;
+  line-height: 1;
+  letter-spacing: 0.17rem;
+  width: 70%; /* Adjust the width of the box as needed */
+  margin: 0 auto; /* Center the box horizontally */
+  box-sizing: border-box; /* Include padding in the total width */
+  text-align: center; /* Justify the text within the box */
+  
 }
 
 .line1,
 .line2{
-   max-width: 0.7%;
-   height: 250px;
-   justify-content: center;
-   align-items: center;
-   margin: 80px auto; /* Center the images horizontally and add margin */
-   display: block;
-}
-
-.knowmore {
-    background-color: yellow;
-    color: black;
-    font-size: 25px;
-    width: 15%;
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    justify-content: center;
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 5%;
-    padding: 5px;
-    font-weight: 200;
-}
-
-.button{
-    padding-top: 20px;
-    padding-bottom: 5%;
+ max-width: 0.7%;
+ height: 250px;
+ justify-content: center;
+ align-items: center;
+ margin: 80px auto; /* Center the images horizontally and add margin */
+ display: block;
 }
 
 .HistoryLine{
-    margin-top: 1px;
-    padding-top: 0%;
-    width: 60%;
+  
+  padding-top: 5%;
+  width: 60%;
 }
 
 .AboutusLine{
-    margin-top: 1%;
-    padding-top: 1%;
-    width: 60%;
+  padding-top: 5%;
+  width: 60%;
 }
 
 .ThemeLine{
-    margin-top: 1px;
-    padding-top: 0%;
-    width: 60%;
+  
+  padding-top: 5%;
+  width: 60%;
 }
 
-  @media  (min-width: 320px) and (max-width: 1030px)   {
-    
-    .All{
-      background-size: cover;
-      position: relative;
-    }
+.audioheading{
+  font-family: 'Museo Sans';
+  font-size: 2rem !important;
+  /* Responsive font size */
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.32em;
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+  z-index: 2;
+}
 
-    .p1,
-    .p2,
-    .p3 {
-      width: 90%;
-    }
+.audioPlayer{
+  margin: 2%;
+}
+
+/* @media  (min-width: 320px) and (max-width: 1030px)   {
   
-    .knowmore {
-      width: 50%;
-    }
+  .All{
+    background-size: cover;
+    position: relative;
+    width: 100%;
   }
 
-@media  (min-width:320px) and  (max-width: 350px) {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 19px;
-        transform: translate(-50%, -50%) scale(3.8);
-    }
+  .p1,
+  .p2,
+  .p3 {
+    width: 90%;
   }
 
-  @media  (min-width:350px) and  (max-width: 410px) {
-    
-    .Aboutbackgroundtext::before{
-        padding-bottom: 21.5px;
-        transform: translate(-50%, -50%) scale(3.7);
-    }
+} */
 
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 22.5px;
-        transform: translate(-50%, -50%) scale(3.8);
-    }
+
+
+@media (max-width: 768px) {
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 2rem; /* Adjust H1 font size for smaller screens */
   }
 
-  @media  (min-width:410px) and  (max-width: 420px) {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 26.5px;
-        transform: translate(-50%, -50%) scale(3.6);
-    }
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(4); /* Adjust scale for smaller screens */
+    padding-bottom: 2.4%;
   }
 
-  @media  (min-width:420px) and  (max-width: 480px) {
+  .audioheading{
+    font-size: 1rem;
+  }
+}
 
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 27.1px;
-        transform: translate(-50%, -50%) scale(3.6);
-    }
+@media (width: 768px) {
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 2rem; /* Adjust H1 font size for smaller screens */
   }
 
-  @media  (min-width:480px) and  (max-width: 530px) {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 30px;
-        transform: translate(-50%, -50%) scale(3.6);
-    }
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(4); /* Adjust scale for smaller screens */
+    padding-bottom: 1.8%;
+  }
+}  
+
+@media (width: 820px)  {
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 5rem; /* Adjust H1 font size for smaller screens */
   }
 
-  @media  (min-width:530px) and  (max-width: 600px) {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 33px;
-        transform: translate(-50%, -50%) scale(3.6);
-    }
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(9); /* Adjust scale for smaller screens */
+    padding-bottom: 0.9%;
+  }
+}  
+
+@media (width: 912px)  {
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 5rem; /* Adjust H1 font size for smaller screens */
   }
 
-  @media  (min-width: 600px)  and  (max-width: 630px) {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 36px;
-        transform: translate(-50%, -50%) scale(3.7);
-    }
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(9); /* Adjust scale for smaller screens */
+    padding-bottom: 0.9%;
+  }
+}  
+
+
+
+/* @media  (min-width:320px) and  (max-width: 350px) {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 19px;
+      transform: translate(-50%, -50%) scale(3.8);
+  }
+} 
+
+@media  (min-width:350px) and  (max-width: 410px) {
+  
+  .Aboutbackgroundtext::before{
+      padding-bottom: 21.5px;
+      transform: translate(-50%, -50%) scale(3.7);
   }
 
-  @media  (min-width: 630px)  and  (max-width: 760px) {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 42px;
-        transform: translate(-50%, -50%) scale(3.7);
-    }
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 22.5px;
+      transform: translate(-50%, -50%) scale(3.8);
   }
+}
 
-  @media  (min-width: 760px) and (max-width: 870px)   {
-    
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 48px;
-        transform: translate(-50%, -50%) scale(3.7);
-    }
-    
+@media  (min-width:410px) and  (max-width: 420px) {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 26.5px;
+      transform: translate(-50%, -50%) scale(3.6);
   }
+}
 
-  @media  (min-width: 870px) and (max-width: 1040px)   {
+@media  (min-width:420px) and  (max-width: 480px) {
 
-    .Aboutbackgroundtext::before,
-    .Historybackgroundtext::before,
-    .Themebackgroundtext::before{
-        padding-bottom: 55px;
-        transform: translate(-50%, -50%) scale(3.7);
-    }
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 27.1px;
+      transform: translate(-50%, -50%) scale(3.6);
   }
+}
+
+@media  (min-width:480px) and  (max-width: 530px) {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 30px;
+      transform: translate(-50%, -50%) scale(3.6);
+  }
+}
+
+@media  (min-width:530px) and  (max-width: 600px) {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 33px;
+      transform: translate(-50%, -50%) scale(3.6);
+  }
+}
+
+@media  (min-width: 600px)  and  (max-width: 630px) {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 36px;
+      transform: translate(-50%, -50%) scale(3.7);
+  }
+}
+
+@media  (min-width: 630px)  and  (max-width: 760px) {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 42px;
+      transform: translate(-50%, -50%) scale(3.7);
+  }
+}
+
+@media  (min-width: 760px) and (max-width: 870px)   {
+  
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 48px;
+      transform: translate(-50%, -50%) scale(3.7);
+  }
+  
+}
+
+@media  (min-width: 870px) and (max-width: 1040px)   {
+
+  .Aboutbackgroundtext::before,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+      padding-bottom: 55px;
+      transform: translate(-50%, -50%) scale(3.7);
+  }
+} */

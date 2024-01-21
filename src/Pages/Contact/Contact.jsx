@@ -1,29 +1,21 @@
-import React, { Fragment, useState } from 'react';
+import React from 'react';
 import styles from './Contact.module.css';
-import lionImage from '../../assets/Screenshot 2024-01-14 184428.png' 
+import lionImage from '../../assets/halfLionHead.png' 
 import UrjaLogo from '../../assets/Group 23.png'
-import Navbar from '../../Components/Navbar/Navbar';
-
+import Navbar from '../../Components/Navbar/Navbar'
 const ContactUs = () => {
 
-  const [submitted, setSubmitted] = useState(false);
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      setSubmitted(true); 
-      alert('Your response has been sent.');
-    };
-    
+
   return (
-    <Fragment>
-      <Navbar></Navbar>
-    <div className={styles["contact-container"]}>
+    <>
+    <div className={styles["container"]}>
+<Navbar />
+<div className={styles["contact-container"]}>
+      
       <div className={styles["form-container"]}>
         <h2 id={styles['header-contactUs']}>CONTACT US</h2>
 
-        <form onSubmit={handleSubmit} action="https://formsubmit.co/b5163a95cd48e3f0139a3711e7e36a18" method="POST">
-        <input type="hidden" name="_captcha" value="false"/>
-          <input type="hidden" name="_next" value="https://urjatiet.com"/>
+        <form >
           <label >
             <div  id={styles['Name']}>Name</div>
             <input type="text" name="name" id={styles['name-text']}/>
@@ -46,6 +38,8 @@ const ContactUs = () => {
       <div className={styles["logo-container"]}>
         <p id={styles['yellow-text']}>For official communication:</p>
              <p id={styles['urja-mail']}>urja2024@gmail.com</p>
+             <p id={styles['urja-mail']}> <b>Overall Student Coordinator </b> </p>
+             <p id={styles['urja-mail']}>Udit Munjal (7976045545) </p>
         <img src={UrjaLogo} alt="Urja Logo" id={styles['UrjaLogo']} />
       </div>
       <div className={styles["Big-logo"]}>
@@ -53,7 +47,9 @@ const ContactUs = () => {
        {/* <p>BIGLION</p> */}
       </div>
     </div>
-    </Fragment>
+    </div>
+   
+    </>
   );
 }
 

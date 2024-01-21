@@ -25,7 +25,7 @@ const AutoplayExample = () => {
       450: {
         perPage: 1,
         width: "100%",
-        height: "8rem",
+        height: "10rem",
       },
       640: {
         perPage: 1,
@@ -87,7 +87,7 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
+              height: "100vh",
             }}
           >
             <div
