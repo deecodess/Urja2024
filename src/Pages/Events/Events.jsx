@@ -125,10 +125,11 @@ const Events = () => {
               type: "loop",
               gap: "15%",
               breakpoints: {
-                640: {
-                  width: "80%",
+                450: {
+                  width: "90%",
                   perPage: 1,
                   arrows: false,
+                  height: "20rem",
                 },
                 767: {
                   width: "100%",
