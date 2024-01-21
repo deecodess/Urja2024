@@ -87,7 +87,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh",
             }}
           >
             <div
@@ -153,7 +152,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
@@ -216,7 +214,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
@@ -279,7 +276,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
