@@ -21,14 +21,16 @@ import "@splidejs/react-splide/css/core";
 const AutoplayExample = () => {
   const options = {
     type: "loop",
-    gap: "2rem",
+    gap: "2.2rem",
     autoplay: false,
     pauseOnHover: false,
     resetProgress: false,
     pagination: false,
     padding: "4rem",
+    arrows: false,
     drag: true,
     breakpoints: {
+<<<<<<< Updated upstream
       640: {
         perPage: 1,
         width: "100%", // Set the width for screens with width less than 640px
@@ -53,6 +55,37 @@ const AutoplayExample = () => {
         perPage: 4,
         width: "100%", // Set the width for screens with width between 1024px and 1439px
         height: "18rem", // Set the height for screens with width between 1024px and 1439px
+=======
+      450: {
+        perPage: 1,
+        width: "90%",
+        height: "6rem",
+      },
+      640: {
+        perPage: 1,
+        width: "90%",
+        height: "8rem",
+      },
+      768: {
+        perPage: 2,
+        width: "90%",
+        height: "10rem",
+      },
+      1024: {
+        perPage: 3,
+        width: "90%",
+        height: "13rem",
+      },
+      1440: {
+        perPage: 3,
+        width: "90%",
+        height: "13rem",
+      },
+      2560: {
+        perPage: 3,
+        width: "90%",
+        height: "13rem",
+>>>>>>> Stashed changes
       },
     },
   };
@@ -103,6 +136,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       backgroundColor: "#232323",
                       textAlign: "center",
@@ -117,12 +151,18 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
+<<<<<<< Updated upstream
                         height: "80%", // Ensure the container takes the full height
+=======
+                        height: "100%",
+                        borderRadius: "8px",
+>>>>>>> Stashed changes
                       }}
                     >
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           maxWidth: "80%", // Adjust the maximum width as needed
                           maxHeight: "60vh", // Adjust the maximum height as needed
@@ -170,6 +210,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       backgroundColor: "#232323",
                       textAlign: "center",
@@ -190,6 +231,7 @@ const AutoplayExample = () => {
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           maxWidth: "80%", // Adjust the maximum width as needed
                           maxHeight: "60vh", // Adjust the maximum height as needed
@@ -237,6 +279,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       backgroundColor: "#232323",
                       textAlign: "center",
@@ -257,6 +300,7 @@ const AutoplayExample = () => {
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           maxWidth: "80%", // Adjust the maximum width as needed
                           maxHeight: "60vh", // Adjust the maximum height as needed
@@ -304,6 +348,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       backgroundColor: "#232323",
                       textAlign: "center",
@@ -324,6 +369,7 @@ const AutoplayExample = () => {
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           maxWidth: "80%", // Adjust the maximum width as needed
                           maxHeight: "60vh", // Adjust the maximum height as needed

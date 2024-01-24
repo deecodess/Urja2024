@@ -3,9 +3,21 @@
   src: url("../../fonts/VetoSansCondBold.ttf");
 }
 .container {
+<<<<<<< Updated upstream
   background-color: #171717;
   max-height: -webkit-fit-content;
   padding: 1rem;
+=======
+  margin-top: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.066),
+      rgba(255, 255, 255, 0.066)
+    ),
+    url("../../assets/21\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+>>>>>>> Stashed changes
   text-align: center;
 }
 .galleryContainer {
@@ -44,13 +56,44 @@
   transform: translate(-50%, -50%) scale(12);
 }
 
+.slide {
+  position: relative;
+  object-fit: contain;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.notHovered {
+  transform: translateX(-10%);
+}
+
+/* .image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+} */
+
 @media (max-width: 768px) {
   .heading {
     font-size: 2rem; /* Adjust H1 font size for smaller screens */
   }
 
   .bgtext::before {
+<<<<<<< Updated upstream
     transform: translate(-50%, -50%) scale(6); /* Adjust scale for smaller screens */
+=======
+    transform: translate(-50%, -50%) scale(5);
+    /* Adjust scale for smaller screens */
+>>>>>>> Stashed changes
   }
   .customh4 {
     font-size: 0.8rem;
