@@ -246,3 +246,41 @@ body {
         display:flex;
     }
 }
+
+
+
+@media (min-width: 481px) and (max-width:768px) {
+    .annualTechFest h1 {
+        font-size: 5vw;
+        margin-top: 30%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .logo {
+        width: 50%;
+        margin-top: 5%;
+    }
+    .mainImage {
+        width: 90% !important;
+        margin-top: 60% !important;
+    }
+    .roarSection{
+        width:100%;
+    }
+    .roarSection h1 {
+        display:none;
+        /* font-size: 8vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    }
+    .lionImage {
+        width: 100% !important;
+    }
+    .mobileonlytext{
+        color:white;
+        font-size: 7vw;
+        margin-top:60%;
+    }
+    .mobileonlytext{
+        display:flex;
+    }
+}
+
