@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+.container {
+    margin-top: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    text-align: center;
+    background-color: #000;
+    position: relative;
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #fff;
+}
+
+.events-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/* slide-name */
+.slide-name-large {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    padding: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.slide-name-small {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    padding: 5px;
+    opacity: 0.5;
+}
+
+/* slide-description */
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* rulebook */
+.rulebook {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FCE502;
+    font-size: 24px;
+    text-decoration: underline;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 3%;
+}
+
+/* slider-progress-bar */
+.my-slider-progress {
+    background: #4B4B4B;
+    margin-bottom: 1%;
+}
+
+.my-slider-progress-bar {
+    background: #FCE502;
+    height: 5px;
+    transition: width 400ms ease;
+}
+
+@media (min-width:200px) and (max-width:450px) {
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .rulebook {
+        font-size: 1.2rem;
+    }
+}

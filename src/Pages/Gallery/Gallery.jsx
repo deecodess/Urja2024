@@ -8,15 +8,8 @@ import {
 } from "./GenerateSlides";
 import classes from "./Gallery.module.css";
 import { Helmet } from "react-helmet";
-// Default theme
-import "@splidejs/react-splide/css";
-
-// or other themes
-import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";
-
-// or only core styles
-import "@splidejs/react-splide/css/core";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const AutoplayExample = () => {
   const options = {
@@ -69,6 +62,7 @@ const AutoplayExample = () => {
         <title>URJA | Gallery</title>
       </Helmet>
       <div className={classes.container}>
+        <Navbar />
         <div className={classes.galleryContainer}>
           <div style={{ position: "relative" }}>
             <div className={classes.bgtext}></div>
@@ -94,7 +88,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
@@ -111,12 +104,13 @@ const AutoplayExample = () => {
                     data-splide-interval="1050"
                     className={classes.slide}
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
-                      objectFit: "contain",
-                      maxWidth: "80vw",
-                      maxHeight: "60vh",
+                      objectFit: "cover",
+                      // objectFit: "contain",
+                      // maxWidth: "80vw",
+                      // maxHeight: "60vh",
                     }}
                   >
                     <div
@@ -133,10 +127,8 @@ const AutoplayExample = () => {
                         alt={slide.alt}
                         className={classes.image}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
@@ -164,7 +156,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
@@ -181,12 +172,10 @@ const AutoplayExample = () => {
                     data-splide-interval="1050"
                     className={classes.slide}
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
-                      objectFit: "contain",
-                      maxWidth: "80vw",
-                      maxHeight: "60vh",
+                      objectFit: "cover",
                     }}
                   >
                     <div
@@ -194,7 +183,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
+                        height: "100%",
                       }}
                     >
                       <img
@@ -202,10 +191,8 @@ const AutoplayExample = () => {
                         alt={slide.alt}
                         className={classes.image}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
@@ -233,7 +220,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
@@ -250,12 +236,10 @@ const AutoplayExample = () => {
                     data-splide-interval="1050"
                     className={classes.slide}
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
-                      objectFit: "contain",
-                      maxWidth: "80vw",
-                      maxHeight: "60vh",
+                      objectFit: "cover",
                     }}
                   >
                     <div
@@ -263,7 +247,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
+                        height: "100%",
                       }}
                     >
                       <img
@@ -271,10 +255,8 @@ const AutoplayExample = () => {
                         alt={slide.alt}
                         className={classes.image}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
@@ -302,7 +284,6 @@ const AutoplayExample = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Ensure the container takes the full height of the viewport
             }}
           >
             <div
@@ -319,12 +300,10 @@ const AutoplayExample = () => {
                     data-splide-interval="1050"
                     className={classes.slide}
                     style={{
-                      backgroundColor: "#232323",
+                      // backgroundColor: "#232323",
                       textAlign: "center",
                       borderRadius: "8px",
-                      objectFit: "contain",
-                      maxWidth: "80vw",
-                      maxHeight: "60vh",
+                      objectFit: "cover",
                     }}
                   >
                     <div
@@ -332,7 +311,7 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        height: "80%", // Ensure the container takes the full height
+                        height: "100%",
                       }}
                     >
                       <img
@@ -340,10 +319,8 @@ const AutoplayExample = () => {
                         alt={slide.alt}
                         className={classes.image}
                         style={{
-                          maxWidth: "80%", // Adjust the maximum width as needed
-                          maxHeight: "60vh", // Adjust the maximum height as needed
-                          width: "auto", // Ensure the image is responsive
-                          height: "auto", // Ensure the image is responsive
+                          width: "100%",
+                          height: "100%",
                           borderRadius: "2px",
                         }}
                         loading="lazy"
