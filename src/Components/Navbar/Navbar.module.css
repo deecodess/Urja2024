@@ -143,3 +143,21 @@ nav{
     
 }
 
+
+@media (min-width:1600px){
+    .logo{
+        height: 2.3em;
+    }
+
+    .links {
+        display: flex;
+        gap: 20px;
+        margin-top: auto; /* Adjust to move the Navbar to the center */
+        margin-bottom: auto; /* Adjust to move the Navbar to the center */
+        justify-content: center;
+        padding: 1rem 0;
+        font-size: 2em;
+        z-index: 1 !important; /* Add this to center the links horizontally */
+    }
+}
+
