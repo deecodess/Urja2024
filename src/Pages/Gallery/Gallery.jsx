@@ -14,42 +14,43 @@ import Navbar from "../../Components/Navbar/Navbar";
 const AutoplayExample = () => {
   const options = {
     type: "loop",
-    gap: "2rem",
+    gap: "2.2rem",
     autoplay: false,
     pauseOnHover: false,
     resetProgress: false,
     pagination: false,
     padding: "4rem",
+    arrows: false,
     drag: true,
     breakpoints: {
       450: {
         perPage: 1,
-        width: "100%",
-        height: "10rem",
+        width: "90%",
+        height: "6rem",
       },
       640: {
         perPage: 1,
-        width: "100%",
-        height: "10rem",
+        width: "90%",
+        height: "8rem",
       },
       768: {
         perPage: 2,
-        width: "100%",
-        height: "8rem",
+        width: "90%",
+        height: "10rem",
       },
       1024: {
         perPage: 3,
-        width: "100%",
+        width: "90%",
         height: "13rem",
       },
       1440: {
-        perPage: 4,
-        width: "100%",
+        perPage: 3,
+        width: "90%",
         height: "13rem",
       },
       2560: {
-        perPage: 4,
-        width: "100%",
+        perPage: 3,
+        width: "90%",
         height: "13rem",
       },
     },
@@ -101,6 +102,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       // backgroundColor: "#232323",
                       textAlign: "center",
@@ -117,11 +119,13 @@ const AutoplayExample = () => {
                         justifyContent: "center",
                         alignItems: "center",
                         height: "100%",
+                        borderRadius: "8px",
                       }}
                     >
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           width: "100%",
                           height: "100%",
@@ -166,6 +170,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       // backgroundColor: "#232323",
                       textAlign: "center",
@@ -184,6 +189,7 @@ const AutoplayExample = () => {
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           width: "100%",
                           height: "100%",
@@ -228,6 +234,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       // backgroundColor: "#232323",
                       textAlign: "center",
@@ -246,6 +253,7 @@ const AutoplayExample = () => {
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           width: "100%",
                           height: "100%",
@@ -290,6 +298,7 @@ const AutoplayExample = () => {
                   <SplideSlide
                     key={slide.src}
                     data-splide-interval="1050"
+                    className={classes.slide}
                     style={{
                       // backgroundColor: "#232323",
                       textAlign: "center",
@@ -308,6 +317,7 @@ const AutoplayExample = () => {
                       <img
                         src={slide.src}
                         alt={slide.alt}
+                        className={classes.image}
                         style={{
                           width: "100%",
                           height: "100%",
