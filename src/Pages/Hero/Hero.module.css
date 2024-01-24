@@ -284,3 +284,24 @@ body {
     }
 }
 
+
+/* media query for 17 inch*/
+@media(min-width:1600px){
+    .annualTechFest {
+        font-family: 'Museo Sans';
+        font-weight: 200;
+        line-height: 1.4;
+        letter-spacing: 0.32em;
+        text-align: center;
+        color: white;
+        margin-top: 1em;
+    }
+
+    .annualTechFest h1{
+        font-size: 3.5em;
+
+    }
+
+}
+
+
