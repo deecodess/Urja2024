@@ -3,11 +3,6 @@
   src: url("../../fonts/VetoSansCondBold.ttf");
 }
 .container {
-<<<<<<< Updated upstream
-  background-color: #171717;
-  max-height: -webkit-fit-content;
-  padding: 1rem;
-=======
   margin-top: 0;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.066),
@@ -17,7 +12,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
->>>>>>> Stashed changes
   text-align: center;
 }
 .galleryContainer {
@@ -88,12 +82,8 @@
   }
 
   .bgtext::before {
-<<<<<<< Updated upstream
-    transform: translate(-50%, -50%) scale(6); /* Adjust scale for smaller screens */
-=======
     transform: translate(-50%, -50%) scale(5);
     /* Adjust scale for smaller screens */
->>>>>>> Stashed changes
   }
   .customh4 {
     font-size: 0.8rem;

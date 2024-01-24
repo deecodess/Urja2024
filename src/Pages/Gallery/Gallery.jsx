@@ -30,32 +30,6 @@ const AutoplayExample = () => {
     arrows: false,
     drag: true,
     breakpoints: {
-<<<<<<< Updated upstream
-      640: {
-        perPage: 1,
-        width: "100%", // Set the width for screens with width less than 640px
-        height: "10rem", // Set the height for screens with width less than 640px
-      },
-      768: {
-        perPage: 2,
-        width: "100%", // Set the width for screens with width between 640px and 767px
-        height: "12rem", // Set the height for screens with width between 640px and 767px
-      },
-      1024: {
-        perPage: 3,
-        width: "100%", // Set the width for screens with width between 768px and 1023px
-        height: "15rem", // Set the height for screens with width between 768px and 1023px
-      },
-      1440: {
-        perPage: 4,
-        width: "100%", // Set the width for screens with width between 1024px and 1439px
-        height: "18rem", // Set the height for screens with width between 1024px and 1439px
-      },
-      2560: {
-        perPage: 4,
-        width: "100%", // Set the width for screens with width between 1024px and 1439px
-        height: "18rem", // Set the height for screens with width between 1024px and 1439px
-=======
       450: {
         perPage: 1,
         width: "90%",
@@ -85,7 +59,6 @@ const AutoplayExample = () => {
         perPage: 3,
         width: "90%",
         height: "13rem",
->>>>>>> Stashed changes
       },
     },
   };
@@ -151,12 +124,8 @@ const AutoplayExample = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-<<<<<<< Updated upstream
-                        height: "80%", // Ensure the container takes the full height
-=======
                         height: "100%",
                         borderRadius: "8px",
->>>>>>> Stashed changes
                       }}
                     >
                       <img
