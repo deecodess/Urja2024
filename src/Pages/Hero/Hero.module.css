@@ -132,7 +132,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;  /* Center horizontally */
-    border-radius: 10%;
+    
 }
 .registerButton {
     background-color: #F26339; /* Green background color */
@@ -146,6 +146,7 @@ body {
     margin-right: 30px; /* Add some margin to separate from the video */
     margin-top: 3rem;   
     margin-bottom: 0;
+    border-radius: 10%;
 }
 
 .buttonText {
@@ -158,7 +159,7 @@ body {
 
 .videoheading{
     font-family: 'Museo Sans';
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     /* Responsive font size */
     font-weight: 800;
     line-height: 1.4;
