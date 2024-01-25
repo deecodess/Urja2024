@@ -77,6 +77,7 @@ const Hero = () => {
         <Contact />
       </div>
     </div>
+    </div>
   );
 };
 
