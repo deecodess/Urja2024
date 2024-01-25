@@ -12,6 +12,7 @@
     height: 100%;
     font-family: 'Noto Sans JP', sans-serif;
     color: #fff;
+    min-height: 100vh;
 }
 
 .events-page {
@@ -70,21 +71,29 @@ img {
     margin-bottom: 3%;
 }
 
+.rulebook a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 /* slider-progress-bar */
 .my-slider-progress {
     background: #4B4B4B;
     margin-bottom: 1%;
+    position: relative;
 }
 
 .my-slider-progress-bar {
     background: #FCE502;
     height: 5px;
     transition: width 400ms ease;
+    position: relative;
 }
 
 @media (min-width:200px) and (max-width:450px) {
     .description {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .rulebook {
