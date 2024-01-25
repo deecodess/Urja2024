@@ -41,13 +41,12 @@ const Hero = () => {
         </div>
         <div className={styles.button}>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfDV_EDsyMsCBItMvLXsKNzdu1MdrS4OKeMlNIQMskDQzNeVw/viewform?usp=sf_link"
+            href="urjatiet.com/register"
             className={styles.registerButton}
             target="_blank"
           >
-            Register
+            Register Now!
           </a>
-          <p className={styles.buttonText}>Kindly Register Your Entries Here</p>
         </div>
         <div className={styles.videoheading}>
           <h1>URJA GLIMPSE</h1>
@@ -56,7 +55,7 @@ const Hero = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className={styles.appInfo}>
+        {/* <div className={styles.appInfo}>
           <img
             src={logo}
             alt="Small Pic Alt Text"
@@ -68,7 +67,7 @@ const Hero = () => {
             alt="Small Pic Alt Text"
             className={styles.smallPic}
           />
-        </div>
+        </div> */}
       </div>
       <div className={styles.mobileviewonly}>
         <About />

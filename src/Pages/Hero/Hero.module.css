@@ -132,9 +132,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;  /* Center horizontally */
+    border-radius: 10%;
 }
 .registerButton {
-    background-color: #4CAF50; /* Green background color */
+    background-color: #F26339; /* Green background color */
     border: none; /* Remove border */
     color: white; /* White text color */
     padding: 10px 20px; /* Add some padding */
