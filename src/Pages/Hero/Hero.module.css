@@ -12,6 +12,20 @@ body {
     /* background-image: url('../../assets/diyaAsset 1 1.png'); */
 }
 
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.app img {
+    height: 50vh;
+    width: auto;
+}
+
+.app .phone {
+    height: 70vh !important;
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -21,9 +35,9 @@ body {
     z-index: -1;
     opacity: 0.55;
     object-fit: cover;
-  }
-  
-  .overlayContent {
+}
+
+.overlayContent {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,7 +45,7 @@ body {
     text-align: center;
     color: white;
     z-index: 1;
-  }
+}
 
 
 .logo {
@@ -48,13 +62,13 @@ body {
 
 .mainImage {
     width: 50vw !important;
-    height:auto;
+    height: auto;
     position: absolute;
     z-index: -1;
     /* Responsive width */
 }
 
-.container{
+.container {
     display: flex !important;
     flex-direction: column;
     align-items: center;
@@ -71,17 +85,19 @@ body {
     margin-top: 7em;
 }
 
-.roarSection h1{
+.roarSection h1 {
     margin-top: 12rem;
-    z-index:4;
+    z-index: 4;
 }
-.firstText{
-    margin-left:10%;
-    margin-right:-10%;
+
+.firstText {
+    margin-left: 10%;
+    margin-right: -10%;
 }
-.secondText{
-    margin-right:10%;
-    margin-left:-10%;
+
+.secondText {
+    margin-right: 10%;
+    margin-left: -10%;
 }
 
 
@@ -110,6 +126,7 @@ body {
     font-weight: bold;
     color: white;
 }
+
 /* 
 .bg1,
 .bg2 {
@@ -122,42 +139,54 @@ body {
     object-fit: cover;
 } */
 
-.bg2{
+.bg2 {
     width: 0px !important;
     height: 0px !important;
 }
 
 
-.button{
+.button {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center horizontally */
-    
+    align-items: center;
+    /* Center horizontally */
+
 }
+
 .registerButton {
-    background-color: #F26339; /* Green background color */
-    border: none; /* Remove border */
-    color: white; /* White text color */
-    padding: 10px 20px; /* Add some padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
+    background-color: #F26339;
+    /* Green background color */
+    border: none;
+    /* Remove border */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Add some padding */
+    text-align: center;
+    /* Center text */
+    text-decoration: none;
+    /* Remove underline */
     display: inline-block;
-    font-size: 25px; /* Set font size */
-    margin-right: 30px; /* Add some margin to separate from the video */
-    margin-top: 3rem;   
+    font-size: 25px;
+    /* Set font size */
+    margin-right: 30px;
+    /* Add some margin to separate from the video */
+    margin-top: 3rem;
     margin-bottom: 0;
     border-radius: 10%;
 }
 
 .buttonText {
     color: white;
-    font-size: 16px; /* Adjust the font size as needed */
-    margin-top: 10px; /* Add margin to separate from the button */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    margin-top: 10px;
+    /* Add margin to separate from the button */
     margin-right: 30px;
-  }
+}
 
 
-.videoheading{
+.videoheading {
     font-family: 'Museo Sans';
     font-size: 1.5rem !important;
     /* Responsive font size */
@@ -170,42 +199,51 @@ body {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center horizontally */
+    align-items: center;
+    /* Center horizontally */
 }
 
 .video {
-    width: 70%; /* Adjust the width as needed */
-    height:auto; /* Maintain the aspect ratio */
-    display:block;
+    width: 70%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
     z-index: 1;
-    margin: 1em auto;  /* Center horizontally */
+    margin: 1em auto;
+    /* Center horizontally */
 
-  }
+}
 
-  .appinfo{
+.appinfo {
     display: flex;
     flex-direction: row;
-  }
-
-  .apptext{
-    color: white;
-  }
-
-  .smallPic {
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
-    margin: 10px; /* Adjust the margin as needed */
-  }
-
-
-.mobileonlytext{
-    display:none;
 }
+
+.apptext {
+    color: white;
+}
+
+.smallPic {
+    width: 80px;
+    /* Adjust the width as needed */
+    height: 80px;
+    /* Adjust the height as needed */
+    margin: 10px;
+    /* Adjust the margin as needed */
+}
+
+
+.mobileonlytext {
+    display: none;
+}
+
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
-    .annualTechFest{
+    .annualTechFest {
         margin-top: 0;
     }
+
     .logo {
         max-width: 30%;
         top: 2%;
@@ -227,8 +265,9 @@ body {
     .secondText {
         margin-top: 0;
     }
-    .mobileviewonly{
-        display:none;
+
+    .mobileviewonly {
+        display: none;
     }
 }
 
@@ -284,38 +323,46 @@ body {
         /* Adjust lion image position */
     }
 }
+
 @media (max-width: 480px) {
     .annualTechFest h1 {
         font-size: 5vw;
         margin-top: 30%;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
     .logo {
         width: 50%;
         margin-top: 5%;
     }
+
     .mainImage {
         width: 90% !important;
         margin-top: 60% !important;
     }
-    .roarSection{
-        width:100%;
+
+    .roarSection {
+        width: 100%;
     }
+
     .roarSection h1 {
-        display:none;
+        display: none;
         /* font-size: 8vw;
         font-family:Verdana, Geneva, Tahoma, sans-serif; */
     }
+
     .lionImage {
         width: 100% !important;
     }
-    .mobileonlytext{
-        color:white;
+
+    .mobileonlytext {
+        color: white;
         font-size: 7vw;
-        margin-top:60%;
+        margin-top: 60%;
     }
-    .mobileonlytext{
-        display:flex;
+
+    .mobileonlytext {
+        display: flex;
     }
 }
 
@@ -325,40 +372,47 @@ body {
     .annualTechFest h1 {
         font-size: 5vw;
         margin-top: 30%;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
     .logo {
         width: 50%;
         margin-top: 5%;
     }
+
     .mainImage {
         width: 90% !important;
         margin-top: 60% !important;
     }
-    .roarSection{
-        width:100%;
+
+    .roarSection {
+        width: 100%;
     }
+
     .roarSection h1 {
-        display:none;
+        display: none;
         /* font-size: 8vw;
         font-family:Verdana, Geneva, Tahoma, sans-serif; */
     }
+
     .lionImage {
         width: 100% !important;
     }
-    .mobileonlytext{
-        color:white;
+
+    .mobileonlytext {
+        color: white;
         font-size: 7vw;
-        margin-top:60%;
+        margin-top: 60%;
     }
-    .mobileonlytext{
-        display:flex;
+
+    .mobileonlytext {
+        display: flex;
     }
 }
 
 
 /* media query for 17 inch*/
-@media(min-width:1600px){
+@media(min-width:1600px) {
     .annualTechFest {
         font-family: 'Museo Sans';
         font-weight: 200;
@@ -369,11 +423,9 @@ body {
         margin-top: 1em;
     }
 
-    .annualTechFest h1{
+    .annualTechFest h1 {
         font-size: 3.5em;
 
     }
 
 }
-
-
