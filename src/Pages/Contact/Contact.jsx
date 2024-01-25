@@ -7,7 +7,7 @@ const ContactUs = () => {
 
 
   return (
-    <>
+    <div>
     <div className={styles["container"]}>
 <Navbar />
 <div className={styles["contact-container"]}>
@@ -49,7 +49,7 @@ const ContactUs = () => {
     </div>
     </div>
    
-    </>
+    </div>
   );
 }
 
