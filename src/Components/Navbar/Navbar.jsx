@@ -15,7 +15,7 @@ const Navbar = () => {
      <div className={styles.links + (showLinks ? ' show' : '')}>
         <img src={Urja_logo} alt="URJA LOGO" className={styles.logo} />
         <div className={styles['hamburger-icon']} onClick={toggleLinks}>
-          ☰
+          
         </div>
         <NavLink exact activeClassName={styles.active_class} to="/">
           Home
