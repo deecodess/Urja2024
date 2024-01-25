@@ -65,6 +65,17 @@ nav{
     z-index: 1;
 }
 
+.thapar_logo{
+    position: fixed;
+    top: 14px; /* Adjust top position as needed */
+    right: 14px; /* Adjust left position as needed */
+    max-width: 90%;
+    z-index: 1;
+    width:5vw;
+    height:5vh;
+
+}
+
 
 /* Add this media query for mobile responsiveness */
 @media (max-width: 768px) {
@@ -89,7 +100,7 @@ nav{
         margin: 10px 0;
     }
 
-    .logo {
+    .logo,.thapar_logo {
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
