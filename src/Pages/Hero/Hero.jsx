@@ -40,14 +40,14 @@ const Hero = () => {
           <h1 className={styles.secondText}> OF EMINENCE</h1>
         </div>
         <div className={styles.button}>
-          <a
+          {/* <a
             href="urjatiet.com/register"
             className={styles.registerButton}
             target="_blank"
           >
             Register Now!
           </a>
-        </div>
+        </div> */}
         <div className={styles.videoheading}>
           <h1>A peek into Urja23.</h1>
           <video className={styles.video} controls>
