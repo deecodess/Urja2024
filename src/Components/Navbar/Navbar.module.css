@@ -65,20 +65,31 @@ nav{
     z-index: 1;
 }
 
+.thapar_logo{
+    position: fixed;
+    top: 14px; /* Adjust top position as needed */
+    right: 14px; /* Adjust left position as needed */
+    max-width: 90%;
+    z-index: 1;
+    width:5vw;
+    height:5vh;
+
+}
+
 
 /* Add this media query for mobile responsiveness */
 @media (max-width: 768px) {
     .links {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
         background-color: black;
         padding: 1rem;
         z-index: 1000;
-        display: none; /* Hide links by default on small screens */
+        /* display: none; Hide links by default on small screens */
     }
 
     .links.show {
@@ -89,10 +100,11 @@ nav{
         margin: 10px 0;
     }
 
-    .logo {
+    .logo,.thapar_logo {
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
+        display: none;
     }
     .hamburger-icon{
         display: none;
@@ -104,7 +116,7 @@ nav{
 
 @media (max-width: 480px) {
     .links {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         position: fixed;
         top: 0;
@@ -127,17 +139,18 @@ nav{
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
+        /* display: none; */
     }
-    .hamburger-icon {
-        /* display: block; */
-        /* position: fixed; */
-        /* top: 10px; */
-        /* right: 10px; */
+    /* .hamburger-icon {
+        display: block; 
+        position: relative;
+        top: 10em;
+        right: 10em;
         cursor: pointer;
-        
-        /* z-index: 1001; */
+        left: 100%; 
+        z-index: -1001;
         color:white;    
-    }
+    } */
     
 }
 
