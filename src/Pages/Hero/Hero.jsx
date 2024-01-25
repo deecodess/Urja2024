@@ -69,6 +69,12 @@ const Hero = () => {
           />
         </div> */}
       </div>
+                <div className={styles.app}>
+          <a href="https://play.google.com/store/apps/details?id=com.saturnalia.saturnalia_app">
+            <img src={download} alt="" />
+          </a>
+          <img src={app} alt="" className={styles.phone} />
+        </div>
       <div className={styles.mobileviewonly}>
         <About />
         <Events />
