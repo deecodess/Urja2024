@@ -2,6 +2,7 @@ import React ,{useState}from 'react';
 import styles from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 import Urja_logo from '../../assets/Group 23.png';
+import thapar_logo from '../../assets/thapar 1.png'
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -37,6 +38,7 @@ const Navbar = () => {
         <NavLink exact activeClassName={styles.passive_class} to="/register">
           Registrations
         </NavLink>
+        <img src={thapar_logo} alt="THAPAR LOGO" className={styles.thapar_logo} />
       </div>
       </nav>
       
