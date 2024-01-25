@@ -15,6 +15,10 @@ body {
 .app {
     display: flex;
     justify-content: center;
+    background: black;
+    align-items: center;
+    padding: 3rem;
+    box-sizing: content-box;
 }
 
 .app img {
@@ -24,6 +28,8 @@ body {
 
 .app .phone {
     height: 70vh !important;
+    width: 30vw;
+    object-fit: cover;
 }
 
 .background {
