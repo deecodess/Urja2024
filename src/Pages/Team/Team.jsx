@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -71,8 +72,14 @@ const ImageSlider = ({ teamMembers }) => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
+=======
+import React, { Fragment } from 'react';
+import styles from './Team.module.css';
+import Navbar from '../../Components/Navbar/Navbar';
+>>>>>>> 24aa1043421520e1959a76cca104977b37a11d75
 
   return (
+<<<<<<< HEAD
     <>
     
     <div className={styles.sliderContainer}>
@@ -96,6 +103,16 @@ const ImageSlider = ({ teamMembers }) => {
     </>
   );
 };
+=======
+    <Fragment>
+      <Navbar></Navbar>
+    <div className={styles.container}>
+      <h1>Coming Soon!</h1>
+    </div>
+    </Fragment>
+  )
+}
+>>>>>>> 24aa1043421520e1959a76cca104977b37a11d75
 
 const ImageDisplayer = () => {
   const ExBo = [

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     display: flex;
     justify-content: center;
@@ -74,3 +75,13 @@
 .slick-dots {
     bottom: 10px;
 }
+=======
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    color:white;
+}
+>>>>>>> 24aa1043421520e1959a76cca104977b37a11d75

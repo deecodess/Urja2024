@@ -59,7 +59,7 @@ const AutoplayExample = () => {
   return (
     <>
       <Helmet>
-        <title>URJA | Gallery</title>
+        <title>URJA</title>
       </Helmet>
       <div className={classes.container}>
         <Navbar />

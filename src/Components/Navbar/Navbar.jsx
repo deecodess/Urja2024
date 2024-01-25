@@ -15,7 +15,7 @@ const Navbar = () => {
      <div className={styles.links + (showLinks ? ' show' : '')}>
         <img src={Urja_logo} alt="URJA LOGO" className={styles.logo} />
         <div className={styles['hamburger-icon']} onClick={toggleLinks}>
-          ☰
+          
         </div>
         <NavLink exact activeClassName={styles.active_class} to="/">
           Home
@@ -36,7 +36,7 @@ const Navbar = () => {
           Contact
         </NavLink>
         <NavLink exact activeClassName={styles.passive_class} to="/register">
-          Registrations
+          Register Now!
         </NavLink>
         <img src={thapar_logo} alt="THAPAR LOGO" className={styles.thapar_logo} />
       </div>
