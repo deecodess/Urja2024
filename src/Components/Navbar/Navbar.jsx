@@ -40,6 +40,7 @@ const Navbar = () => {
         <NavLink exact activeClassName={styles.passive_class} to="/register">
           Registrations
         </NavLink>
+        <img src={thapar_logo} alt="THAPAR LOGO" className={styles.thapar_logo} />
       </div>
       </nav>
       
