@@ -36,12 +36,6 @@ nav{
     width: auto;
 }
 
-.logo2{
-    object-fit: cover;
-    height: 2.8rem;
-    width: auto;
-}
-
 .links a {
     text-decoration: none;
     color: white;
@@ -95,11 +89,8 @@ nav{
         background-color: black;
         padding: 1rem;
         z-index: 1000;
-
-    .links a{
-        display: none;
+        /* display: none; Hide links by default on small screens */
     }
-
 
     .links.show {
         display: flex;
@@ -111,21 +102,13 @@ nav{
 
     .logo,.thapar_logo {
         top: 10px;
-        left: 14%;
+        left: 50%;
         transform: translateX(-50%);
         display: none;
     }
-
-    .logo2{
-        position: relative;
-        left: 45%;
-        
+    .hamburger-icon{
+        display: none;
     }
-
-    .hamburger-icon {
-        display: none;  
-    }
-
 
     /* Add this rule to display the hamburger icon */
     
@@ -141,9 +124,8 @@ nav{
         right: 0;
         padding: 1rem;
         z-index: 1000;
-         /* Hide links by default on small screens */
+        display: none; /* Hide links by default on small screens */
     }
-
 
     .links.show {
         display: flex;
@@ -155,38 +137,28 @@ nav{
 
     .logo {
         top: 10px;
-        left: 14%;
+        left: 50%;
         transform: translateX(-50%);
         /* display: none; */
     }
-  
-    .logo2{
+    /* .hamburger-icon {
+        display: block; 
         position: relative;
-        left: 45%;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
+        top: 10em;
+        right: 10em;
+        cursor: pointer;
+        left: 100%; 
+        z-index: -1001;
+        color:white;    
+    } */
     
 }
 
 
 @media (min-width:1600px){
-
-    .hamburger-icon{
-        display: none;
-    }
-
     .logo{
         height: 2.3em;
     }
-
-    .logo2{
-        height: 2.3em;
-    }
-    
-
 
     .links {
         display: flex;
@@ -200,14 +172,3 @@ nav{
     }
 }
 
-
-@media (min-width:768px){
-    .logo2{
-        position: absolute;
-        right: 2.5%;
-    }
-
-    .hamburger-icon{
-        display: none;
-    }
-}
