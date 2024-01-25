@@ -14,6 +14,9 @@ import urja_aftermovie_final from "../../assets/urja_aftermovie_final.mp4";
 import logo from "../../assets/logo.jpeg";
 import phone from "../../assets/phone.png";
 
+import download from './../../assets/download.png';
+import app from './../../assets/app.png';
+
 const Hero = () => {
   return (
     <div>
