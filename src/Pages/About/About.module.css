@@ -84,7 +84,7 @@ padding-bottom: 0.55%;
   text-wrap: wrap;
   justify-content: center;
   font-family: Outfit;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500px;
   line-height: 1;
   letter-spacing: 0.17rem;
@@ -178,12 +178,12 @@ padding-bottom: 0.55%;
   .p1,
   .p2,
   .p3{
-   font-size: 1rem;
+   font-size: 0.7rem;
   }
 
 .line1,
 .line2{
-  height: 180px;
+  height: 140px;
 }
 
 }
