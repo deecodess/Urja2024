@@ -49,7 +49,7 @@ const Hero = () => {
           </a>
         </div>
         <div className={styles.videoheading}>
-          <h1>URJA GLIMPSE</h1>
+          <h1>A peek into Urja23.</h1>
           <video className={styles.video} controls>
             <source src={urja_aftermovie_final} type="video/mp4" />
             Your browser does not support the video tag.

@@ -36,7 +36,7 @@ const Navbar = () => {
           Contact
         </NavLink>
         <NavLink exact activeClassName={styles.passive_class} to="/register">
-          Registrations
+          Register Now!
         </NavLink>
         <img src={thapar_logo} alt="THAPAR LOGO" className={styles.thapar_logo} />
       </div>
