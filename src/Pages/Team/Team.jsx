@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import bg1 from '../../assets/21 1.png';
 import bg2 from '../../assets/diyaAsset 1 1.png'
-import styles from './Team.module.css'; // Assuming you have a CSS module file
+import styles from './Team.module.css'; 
 import osc from '../../assets/teampage/3-min.jpg'
 import dosc from '../../assets/teampage/6-min.jpg'
 import dosc1 from '../../assets/teampage/23-min.jpg'
@@ -24,7 +24,7 @@ import ofc1 from '../../assets/teampage/27-min.jpg'
 import ogc1 from '../../assets/teampage/30-min.jpg'
 import odc from '../../assets/teampage/mitul.png'
 import omc1 from '../../assets/teampage/29-min.jpg'
-
+import Navbar from '../../Components/Navbar/Navbar'
 
 const CustomPrevArrow = (props) => (
   <button {...props} className={styles['custom-prev-arrow']}>
@@ -73,7 +73,10 @@ const ImageSlider = ({ teamMembers }) => {
   };
 
   return (
+    <>
+    
     <div className={styles.sliderContainer}>
+     
       <Slider {...settings}>
         {teamMembers.map((member) => (
           <div key={member.id} className={styles.sliderItem}>
@@ -90,6 +93,7 @@ const ImageSlider = ({ teamMembers }) => {
         ))}
       </Slider>
     </div>
+    </>
   );
 };
 
@@ -121,6 +125,7 @@ const ImageDisplayer = () => {
     // { id: 23, name: 'Aayan Zaidi', designation: 'Overall Discipline Coordinator', imageUrl: ''},
   ];
     return (
+      <><Navbar />
     <div className={styles.container}>
       <div className={styles.bg1}><img src={bg1} alt="" /></div>
       <div className={styles.bg2}> <img src={bg2} alt="" /></div>
@@ -132,12 +137,11 @@ const ImageDisplayer = () => {
               <h2 className={styles.heading1}>Executive Board</h2>
               <ImageSlider teamMembers={ExBo} />
             </div>
-            
-            {/* Add similar sections for Executive Committee and Core */}
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
