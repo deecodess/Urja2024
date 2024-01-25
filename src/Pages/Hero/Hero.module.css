@@ -127,6 +127,34 @@ body {
     height: 0px !important;
 }
 
+
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center horizontally */
+}
+.registerButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 25px; /* Set font size */
+    margin-right: 30px; /* Add some margin to separate from the video */
+    margin-top: 3rem;   
+    margin-bottom: 0;
+}
+
+.buttonText {
+    color: white;
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add margin to separate from the button */
+    margin-right: 30px;
+  }
+
+
 .videoheading{
     font-family: 'Museo Sans';
     font-size: 2rem !important;
@@ -136,16 +164,37 @@ body {
     letter-spacing: 0.32em;
     text-align: center;
     color: white;
-    margin-top: 2em;
+    margin-top: 1em;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center horizontally */
 }
 
 .video {
-    width: 100%; /* Adjust the width as needed */
+    width: 70%; /* Adjust the width as needed */
     height:auto; /* Maintain the aspect ratio */
     display:block;
     z-index: 1;
+    margin: 1em auto;  /* Center horizontally */
+
   }
+
+  .appinfo{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .apptext{
+    color: white;
+  }
+
+  .smallPic {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    margin: 10px; /* Adjust the margin as needed */
+  }
+
 
 .mobileonlytext{
     display:none;
