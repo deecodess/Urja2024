@@ -90,6 +90,7 @@ nav{
         background-color: black;
         padding: 1rem;
         z-index: 1000;
+        display: none;
         /* display: none; Hide links by default on small screens */
     }
 
