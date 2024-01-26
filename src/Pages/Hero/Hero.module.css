@@ -22,12 +22,12 @@ body {
 }
 
 .app img {
-    height: 50vh;
+    height: 23vh;
     width: auto;
 }
 
 .app .phone {
-    height: 70vh !important;
+    height: 45vh !important;
     width: 30vw;
     object-fit: cover;
 }
@@ -292,6 +292,7 @@ body {
         width: 30%;
         padding-top: 5px;
     }
+
 
     .annualTechFest {
         font-size: 1rem;
