@@ -28,6 +28,7 @@ nav{
     justify-content: center;
     padding: 1rem 0;
     z-index: 1 !important; /* Add this to center the links horizontally */
+    font-size: 110%;
 }
 
 .logo{

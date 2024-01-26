@@ -8,8 +8,8 @@ import insta from './../../assets/insta.png';
 const ContactUs = () => {
   return (
     <div>
+      <Navbar />
       <div className={styles['container']}>
-        <Navbar />
         <div className={styles['contact-container']}>
 
           <div className={styles['form-container']}>
