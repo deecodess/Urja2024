@@ -22,12 +22,12 @@ body {
 }
 
 .app img {
-    height: 50vh;
+    height: 23vh;
     width: auto;
 }
 
 .app .phone {
-    height: 70vh !important;
+    height: 45vh !important;
     width: 30vw;
     object-fit: cover;
 }
@@ -293,6 +293,7 @@ body {
         padding-top: 5px;
     }
 
+
     .annualTechFest {
         font-size: 1rem;
     }
@@ -300,6 +301,7 @@ body {
 
 /* Media query for tablets */
 @media (max-width: 768px) {
+
     .annualTechFest h1 {
         font-size: 2.5vw;
         /* Scale font size down for tablets */
@@ -379,6 +381,7 @@ body {
 
 
 @media (min-width: 481px) and (max-width:768px) {
+    
     .annualTechFest h1 {
         font-size: 5vw;
         margin-top: 30%;
