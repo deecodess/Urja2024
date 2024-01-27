@@ -250,6 +250,7 @@ body {
 
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
+    
     .annualTechFest {
         margin-top: 0;
     }
@@ -337,6 +338,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .app{
+        display: none;
+    }
     .annualTechFest h1 {
         font-size: 5vw;
         margin-top: 30%;
@@ -381,6 +385,10 @@ body {
 
 
 @media (min-width: 481px) and (max-width:768px) {
+
+    .app{
+        display: none;
+    }
     
     .annualTechFest h1 {
         font-size: 5vw;
