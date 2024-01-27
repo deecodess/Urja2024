@@ -12,6 +12,7 @@ body {
     /* background-image: url('../../assets/diyaAsset 1 1.png'); */
 }
 
+
 .app {
     display: flex;
     justify-content: center;
@@ -71,6 +72,7 @@ body {
     height: auto;
     position: absolute;
     z-index: -1;
+    margin-bottom: 10%;
     /* Responsive width */
 }
 
@@ -266,6 +268,10 @@ body {
         padding-top: 12%;
     }
 
+    .mainImage{
+        padding-bottom: 10%;
+    }
+
     .roarSection {
         flex-direction: row;
         /* Side-by-side on larger screens */
@@ -320,7 +326,7 @@ body {
     .mainImage {
         width: 50%;
         /* Adjust main image size for tablets */
-        margin-top: 5%;
+        margin-top: 2%;
         /* Adjust image position */
     }
 
@@ -404,6 +410,7 @@ body {
     .mainImage {
         width: 90% !important;
         margin-top: 60% !important;
+        padding-bottom: 10%;
     }
 
     .roarSection {
