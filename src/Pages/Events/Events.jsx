@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Events.module.css";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -63,7 +63,7 @@ const data = [
     description:
       "Table tennis, or ping pong, is an exhilarating indoor sport. Players use paddles to swiftly maneuver a lightweight ball over a rectangular table, separated by a net. Quick reflexes and strategic play characterize this dynamic game.",
     rulebookSrc:
-      "https://drive.google.com/file/d/1kCxMk_4b6_6fuEx3umPg-m1IkmDJs1Gl/view?usp=share_link",
+      "https://drive.google.com/file/d/1S7MzgDz5bbEL6JNOsB9K-UTExmAuSOoH/view?usp=share_link",
   },
   {
     name: "Volleyball",
@@ -71,7 +71,7 @@ const data = [
     description:
       "Volleyball is a dynamic team sport played on a rectangular court divided by a net. Teams of six players score points by sending the ball over the net into the opponent's court, demanding quick reflexes and strategic plays.",
     rulebookSrc:
-      "https://drive.google.com/file/d/1kCxMk_4b6_6fuEx3umPg-m1IkmDJs1Gl/view?usp=share_link",
+      "https://drive.google.com/file/d/1DXs4LX_bmnXpFC6k8YlaP5Mz9IBlrd_S/view?usp=share_link",
   },
   {
     name: "Badminton",
