@@ -1,22 +1,21 @@
 import React from "react";
 import Main from "../../assets/Group 19.png";
-import Lion_img from "../../assets/Firefly a golden lion head trophy on a long pillar 12534 2.png";
+// import Lion_img from "../../assets/Firefly a golden lion head trophy on a long pillar 12534 2.png";
 import styles from "./Hero.module.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import bg2 from "../../assets/diyaAsset 1 1.png";
-import background from "../../assets/background.png";
+// import background from "../../assets/background.png";
 import background2 from "../../assets/background2.jpg"
-import background3 from "../../assets/background3.jpg"
+// import background3 from "../../assets/background3.jpg"
 import About from "../About/About.jsx";
 import Events from "../Events/Events.jsx";
 import Gallery from "../Gallery/Gallery.jsx";
 import Register from "../Register/Register.jsx";
 import Contact from "../Contact/Contact.jsx";
 import urja_aftermovie_final from "../../assets/urja_aftermovie_final.mp4";
-import logo from "../../assets/logo.jpeg";
-import phone from "../../assets/phone.png";
+// import logo from "../../assets/logo.jpeg";
+// import phone from "../../assets/phone.png";
 import New_Logo from "../../assets/new_lion.png"
-
 import download from './../../assets/download.png';
 import app from './../../assets/app.png';
 
