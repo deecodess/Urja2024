@@ -80,7 +80,7 @@ body {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content:flex-start;
 }
 
 .roarSection {
