@@ -338,7 +338,8 @@ body {
     .lionImage {
         width: 30%;
         /* Adjust lion image size for tablets */
-        margin: 3% auto;
+        margin: auto;
+        margin-bottom: 42%;
         /* Adjust lion image position */
     }
 }
@@ -404,7 +405,7 @@ body {
 
     .logo {
         width: 50%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .mainImage {
