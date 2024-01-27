@@ -22,27 +22,33 @@ const Hero = () => {
     <div>
       <Navbar />
 
+      <div className={styles.parent}>
       <div className={styles.container}>
-        <div className={styles.background}>
-          <img src={background} className={styles.background} alt="" />
-        </div>
+        <img src={background} className={styles.background} alt="" />
         <div className={styles.bg1}>
-          {/* <img src={bg1} alt="" /> */}
-          <img src={bg2} className={styles.bg2} alt="" />
-        </div>
-        {/* <img src={Urja_logo} alt="URJA LOGO" className={styles.logo} /> */}
+        <img src={bg2} className={styles.bg2} alt="" />
+       </div>
+
+      </div>
+
+       
 
         <div className={styles.annualTechFest}>
           <h1>ANNUAL SPORTS FEST OF THAPAR INSTITUTE</h1>
         </div>
-        <img src={Main} alt="" className={styles.mainImage} />
-        <h1 className={styles.mobileonlytext}>THE ROAR OF EMINENCE</h1>
+        <div>
+           
         <div className={styles.roarSection}>
+        <h1 className={styles.mobileonlytext}>THE ROAR OF EMINENCE</h1>
+        <img src={Main} alt="" className={styles.mainImage} />
           <h1 className={styles.firstText}> THE ROAR</h1>
           <img src={Lion_img} alt="" className={styles.lionImage} />
           <h1 className={styles.secondText}> OF EMINENCE</h1>
         </div>
         <div className={styles.button}>
+
+        </div>
+        
           {/* <a
             href="urjatiet.com/register"
             className={styles.registerButton}

@@ -1,6 +1,10 @@
 .main-div{
   background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
-  
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  background-color: #000;
 }
 
 .container {

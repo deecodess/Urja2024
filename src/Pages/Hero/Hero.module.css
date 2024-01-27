@@ -12,6 +12,7 @@ body {
     /* background-image: url('../../assets/diyaAsset 1 1.png'); */
 }
 
+
 .app {
     display: flex;
     justify-content: center;
@@ -71,6 +72,7 @@ body {
     height: auto;
     position: absolute;
     z-index: -1;
+    margin-bottom: 10%;
     /* Responsive width */
 }
 
@@ -250,6 +252,7 @@ body {
 
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
+    
     .annualTechFest {
         margin-top: 0;
     }
@@ -263,6 +266,10 @@ body {
     .lionImage {
         width: 50%;
         padding-top: 12%;
+    }
+
+    .mainImage{
+        padding-bottom: 10%;
     }
 
     .roarSection {
@@ -319,7 +326,7 @@ body {
     .mainImage {
         width: 50%;
         /* Adjust main image size for tablets */
-        margin-top: 5%;
+        margin-top: 2%;
         /* Adjust image position */
     }
 
@@ -331,12 +338,16 @@ body {
     .lionImage {
         width: 30%;
         /* Adjust lion image size for tablets */
-        margin: 3% auto;
+        margin: auto;
+        margin-bottom: 42%;
         /* Adjust lion image position */
     }
 }
 
 @media (max-width: 480px) {
+    .app{
+        display: none;
+    }
     .annualTechFest h1 {
         font-size: 5vw;
         margin-top: 30%;
@@ -381,6 +392,10 @@ body {
 
 
 @media (min-width: 481px) and (max-width:768px) {
+
+    .app{
+        display: none;
+    }
     
     .annualTechFest h1 {
         font-size: 5vw;
@@ -390,12 +405,13 @@ body {
 
     .logo {
         width: 50%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .mainImage {
         width: 90% !important;
         margin-top: 60% !important;
+        padding-bottom: 10%;
     }
 
     .roarSection {
