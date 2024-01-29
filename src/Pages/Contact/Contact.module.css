@@ -1,4 +1,12 @@
-.main-div{
+/* .main-div{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  background-color: #000;
+} */
+body{
   background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
   background-size: cover;
   background-position: center;
@@ -8,7 +16,7 @@
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 2.5rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
   background-size: cover;
   background-position: center;
@@ -124,6 +132,9 @@
   mix-blend-mode: lighten;
 }
 
+.map{
+  margin:1rem;
+}
 
 @media (min-width:1050px) and (max-width:1200px) {
   .Big-logo {
