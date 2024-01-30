@@ -16,7 +16,7 @@ body {
 .app {
     display: flex;
     justify-content: center;
-    background: black;
+    background: linear-gradient(45deg,#559198,#494C1A);
     align-items: center;
     padding: 3rem;
     box-sizing: content-box;
@@ -425,7 +425,7 @@ body {
     }
 
     .lionImage {
-        width: 100% !important;
+        width: 72% !important;
     }
 
     .mobileonlytext {
