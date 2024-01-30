@@ -161,7 +161,7 @@ const Register = () => {
             ))}
           </select>
         </div>
-        <br />
+        
         <div>
           <label
             className={`${styles['sub-heading']} ${styles['sub-heading-4']}`}
@@ -179,7 +179,7 @@ const Register = () => {
             onChange={e => handleInputChange (e, 'college', 'name')}
           />
         </div>
-        <br />
+        
         <div>
           <label
             className={`${styles['sub-heading']} ${styles['sub-heading-4']}`}
@@ -214,7 +214,7 @@ const Register = () => {
             onChange={e => handleCaptainChange (e, 'name')}
           />
         </div>
-        <br />
+      
 
         <div>
           <label
@@ -250,7 +250,7 @@ const Register = () => {
             onChange={e => handleCaptainChange (e, 'age')}
           />
         </div>
-        <br />
+    
         <div>
 
           <label
@@ -270,7 +270,7 @@ const Register = () => {
           />
 
         </div>
-        <br />
+        
         <div>
           <label
             className={`${styles['sub-heading']} ${styles['sub-heading-3']}`}
