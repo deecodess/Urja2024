@@ -5,6 +5,9 @@ import line2 from "../../assets/Line 7.png";
 import line3 from "../../assets/Line 3.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import urja_anthem from "../../assets/urja_anthem.mp3";
+import jogging from "../../assets/jogging.png";
+import biking from "../../assets/biking.png";
+import jump from "../../assets/jump.png";
 
 const About = () => {
   return (
@@ -13,7 +16,10 @@ const About = () => {
         <Navbar></Navbar>
         <div style={{ position: "relative" }}>
           <div className={styles.Aboutbackgroundtext}></div>
-          <h1 className={styles.aboutheading}>ABOUT US</h1>
+          <div className={styles.newabout}>
+            <h1 className={styles.aboutheading}>ABOUT US</h1>
+            <img src={jogging} alt="" className={styles.jog} />
+          </div>
           <img src={line3} alt="" className={styles.AboutusLine} />
         </div>
         <div className={styles.p1}>
@@ -39,7 +45,9 @@ const About = () => {
           <h1 className={styles.historyheading}>HISTORY</h1>
           <img src={line3} alt="" className={styles.HistoryLine} />
         </div>
+
         <div className={styles.p2}>
+          <img src={biking} alt="" className={styles.biking} />
           <p>
             Gear up for the highly anticipated next edition of URJA, the
             flagship sports fest at Thapar Institute of Engineering &
@@ -59,12 +67,15 @@ const About = () => {
             participants to join in the festivities and make this three-day fest
             an unforgettable celebration. Come and be part of the thrill!
           </p>
-          <img src={line2} alt="" className={styles.line2} />
         </div>
+        <img src={line2} alt="" className={styles.line2} />
 
         <div style={{ position: "relative" }}>
           <div className={styles.Themebackgroundtext}></div>
-          <h1 className={styles.themeheading}>THEME</h1>
+          <div className={styles.newtheme}>
+            <h1 className={styles.themeheading}>THEME</h1>
+            <img src={jump} alt="" className={styles.jump} />
+          </div>
           <img src={line3} alt="" className={styles.ThemeLine} />
         </div>
         <div className={styles.p3}>
@@ -80,7 +91,10 @@ const About = () => {
             ordinary boundaries.
           </p>
         </div>
-        <h2 className={styles.audioheading}>URJA ANTHEM</h2>
+
+        <div>
+          <h2 className={styles.audioheading}>URJA ANTHEM</h2>
+        </div>
         <hr
           style={{
             maxWidth: "18rem",

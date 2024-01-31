@@ -1,6 +1,18 @@
+@keyframes goodie{
+  from {font-size: 0.5rem;transform: rotateX(0deg);}
+  to {font-size: 1.4rem;transform: rotateX(360deg);}
+
+}
+
+@keyframes foodie{
+  from {font-size: 0.5rem;}
+  to {font-size: 6.5rem;}
+
+}
+
 .All{
   margin-top: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+  background-image: linear-gradient(127deg, rgba(42, 148, 244, 0.16) 43.8%, rgba(255, 238, 89, 0.08) 43.8%);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -11,38 +23,62 @@
   overflow-x: hidden;
 }
 
+.jog , .jump{
+  float: right;
+  padding-right: 0.5rem;
+  max-width: 20%;
+}
+
+.biking{
+  margin-right: 1.5rem;
+  margin-left: 0;
+  width: 33%;
+  padding-top: 80px;
+  height: 600px;
+}
+
 .aboutheading{
-text-align: center;
+text-align: left;
 color: #6dadf3;
 /* font-family: "veto"; */
 font-size: 6.5rem;
 margin-bottom: 0;
 margin-top: 4.5%;
+margin-left: 8rem;
 position: relative; /* Ensure stacking context for z-index to work */
 z-index: 2;
+animation-name: foodie;
+animation-duration: 3s;
+animation-direction: forward;
 }
 
 
 .historyheading{
-text-align: center;
+text-align: right;
+margin-right: 8rem;
 color: #f26339;
 /* font-family: "veto"; */
 font-size: 6.5rem;
-margin-bottom: 0;
-margin-top: 4.5%;
 position: relative; /* Ensure stacking context for z-index to work */
 z-index: 2;
+animation-name: foodie;
+animation-duration: 3s;
+animation-direction: forward;
 }
 
 .themeheading{
-text-align: center;
+text-align: left;
 color: #fce502;
 /* font-family: "veto"; */
 font-size: 6.5rem;
 margin-bottom: 0;
 margin-top: 4.5%;
+margin-left: 8rem;
 position: relative; /* Ensure stacking context for z-index to work */
 z-index: 2;
+animation-name: foodie;
+animation-duration: 3s;
+animation-direction: forward;
 }
 
 .Aboutbackgroundtext::before{
@@ -61,10 +97,11 @@ padding-bottom: 0.55%;
   color: transparent;
   -webkit-text-stroke: 0.13px #2d2321;
   position: absolute;
+  padding-top: 3rem;
   top: 50%;
   left: 50%; /* Adjust the left position as needed */
   transform: translate(-50%, -50%) scale(13); /* Center the text both vertically and horizontally */
-  padding-bottom: 0.55%;
+  padding-bottom: 0.8%;
 }
 .Themebackgroundtext::before{
   content: "THEME";
@@ -74,7 +111,21 @@ padding-bottom: 0.55%;
   top: 50%;
   left: 50%; /* Adjust the left position as needed */
   transform: translate(-50%, -50%) scale(13); /* Center the text both vertically and horizontally */
+  padding-right: 3.5rem;
   padding-bottom: 0.55%;
+}
+
+.p1,.p3{
+  float: left;
+  padding-left: 5rem;
+}
+
+.p2{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  /* float: right;
+  padding-right: 5rem; */
 }
 
 .p1,
@@ -91,23 +142,22 @@ padding-bottom: 0.55%;
   width: 70%; /* Adjust the width of the box as needed */
   margin: 0 auto; /* Center the box horizontally */
   box-sizing: border-box; /* Include padding in the total width */
-  text-align: center; /* Justify the text within the box */
-  
+  text-align: justify; /* Justify the text within the box */
+  animation-name: goodie;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
 
 .line1,
 .line2{
  max-width: 0.7%;
  height: 250px;
- justify-content: center;
- align-items: center;
  margin: 80px auto; /* Center the images horizontally and add margin */
  display: block;
 }
 
 .HistoryLine{
-  
-  padding-top: 5%;
+  padding-top: 0%;
   width: 60%;
 }
 
@@ -123,6 +173,7 @@ padding-bottom: 0.55%;
 }
 
 .audioheading{
+  display: block;
   font-family: 'Museo Sans';
   font-size: 2rem !important;
   /* Responsive font size */
@@ -131,7 +182,7 @@ padding-bottom: 0.55%;
   letter-spacing: 0.32em;
   text-align: center;
   color: white;
-  margin-top: 2em;
+  margin-top: 10em;
   z-index: 2;
 }
 
