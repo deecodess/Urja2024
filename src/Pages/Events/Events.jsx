@@ -97,7 +97,7 @@ const Events = () => {
   //style objects
   //arrow button styles
   const buttonStyles = {
-    color: "#FCE502",
+    color: "#C7D8EB",
     backgroundColor: "transparent",
     position: "absolute",
     justifyItem: "center",
@@ -122,7 +122,7 @@ const Events = () => {
 
   const leftArrow = {
     ...arrowStyles,
-    borderRight: "10px solid #FCE502",
+    borderRight: "10px solid #C7D8EB",
     borderBottom: "10px solid transparent",
     borderTop: "10px solid transparent",
     left: 0,
@@ -130,7 +130,7 @@ const Events = () => {
 
   const rightArrow = {
     ...arrowStyles,
-    borderLeft: "10px solid #FCE502",
+    borderLeft: "10px solid #C7D8EB",
     borderBottom: "10px solid transparent",
     borderTop: "10px solid transparent",
     right: 0,
@@ -180,7 +180,7 @@ const Events = () => {
                   width: "90%",
                   perPage: 1,
                   arrows: false,
-                  height: "20rem",
+                  height: "22rem",
                 },
                 767: {
                   width: "100%",
