@@ -1,7 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-.main-heading {
+body {
+    background-image: url('/src/assets/img-4\ 2register.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    height: 360vh;
+    width:100vw;
+    /* color: #FFFFFF; */
+
+  }
+
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
+    padding: 1vw; /* Adjust padding using vw unit */
+    padding-top: 0vw;
+    border-radius: 1vw; /* Add rounded corners using vw unit */
+    margin: auto; /* Center the form container */
+    height: 330vh;
+    max-width: 80vw; /* Set a maximum width for the form container using vw unit */
+    margin-top: 1vw; /* Adjust margin-top using vw unit */
+    margin-bottom: 4vw; /* Adjust margin-bottom using vw unit */
+  }
+
+/* .main-heading {
     width: 100%;
     max-width: 1796px;
     height: auto;
@@ -14,23 +39,23 @@
     opacity: 0.1;
     color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FFEE59;
+    -webkit-text-stroke-color: #FFBE55;
     z-index: -1;
-    /* top:-2vw; */
-}
+    /* top:-2vw; 
+} */
 
 .main-heading-2 {
     position: relative;
     width: 90%;
     max-width: 500px;
     height: auto;
-    color: #FFEE59;
+    color: #FFBE55;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 6vw;
     top: 8vw;
-    left: 25.8vw;
+    left: 20.8vw;
 }
 
 .sub-heading-1,
@@ -44,11 +69,11 @@
     width: 90%;
     max-width: 600px;
     height: auto;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 2.5vw; /* Decreased font size for subheadings */
-    top: 14vw; /* Increased top spacing for subheadings */
+    top: 12vw; /* Increased top spacing for subheadings */
     left: 10vw;
     margin-top: 20vw;
     margin-bottom: 20vw;
@@ -58,7 +83,7 @@
 .submit-button {
     width: 90%;
     max-width: 1600px;
-    top: 18vw; /* Increased top spacing for input boxes and submit button */
+    top: 16vw; /* Increased top spacing for input boxes and submit button */
     left: 10vw;
 }
 
@@ -68,10 +93,10 @@
     height: auto;
     border-radius: 10px;
     opacity: 0.6;
-    border: 2px solid #8b8b8b;
+    border: 2px solid #000000;
     padding: 5px;
-    background: #252525;
-    color: white;
+    background: #A7A7A7;
+    color: #000000;
     left: 10vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -84,7 +109,7 @@
 .input-box-4,
 .input-box-5,
 .input-box-6{
-    top: 14.7vw;
+    top: 11.7vw;
 }
 
 .input-box-7{
@@ -97,7 +122,7 @@
     width: 13vw;
     height: 4vw;
     border-radius: 10px;
-    background-color: #FFEE59;
+    background-color: #FFBE55;
     color: #3A3A3A;
     font-family: 'Outfit', sans-serif;
     font-size: 2vw;

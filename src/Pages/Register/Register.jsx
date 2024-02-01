@@ -138,7 +138,9 @@ const Register = () => {
   return (
     <Fragment>
       <Navbar />
-      <h1 className={styles['main-heading']}> REGISTRATION </h1>
+      
+      <div className={styles['form-container']}>
+      {/* <h1 className={styles['main-heading']}> REGISTRATION </h1> */}
       <h2 className={styles['main-heading-2']}> REGISTRATION </h2>
       <form className={styles['form']} onSubmit={handleSubmit}>
 
@@ -290,6 +292,68 @@ const Register = () => {
         </div>
 
         <br />
+
+        <div>
+          <label
+            className={`${styles['sub-heading']} ${styles['sub-heading-3']}`}
+            htmlFor="captainroll"
+          >
+            Coach Name{' '}
+          </label>
+          <br />
+          <input
+            className={`${styles['input-box']} ${styles['input-box-3']}`}
+            type="text"
+            name="captainroll"
+            id="captainroll"
+            value={formData.captain.rollNumber}
+            onChange={e => handleCaptainChange (e, 'rollNumber')}
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label
+            className={`${styles['sub-heading']} ${styles['sub-heading-3']}`}
+            htmlFor="captainroll"
+          >
+            Coach Contact Number{' '}
+          </label>
+          <br />
+          <input
+            className={`${styles['input-box']} ${styles['input-box-3']}`}
+            type="text"
+            name="captainroll"
+            id="captainroll"
+            value={formData.captain.rollNumber}
+            onChange={e => handleCaptainChange (e, 'rollNumber')}
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label
+            className={`${styles['sub-heading']} ${styles['sub-heading-3']}`}
+            htmlFor="captainroll"
+          >
+            Coach Email Id{' '}
+          </label>
+          <br />
+
+          <input
+            className={`${styles['input-box']} ${styles['input-box-3']}`}
+            type="text"
+            name="captainroll"
+            id="captainroll"
+            value={formData.captain.rollNumber}
+            onChange={e => handleCaptainChange (e, 'rollNumber')}
+          />
+        </div>
+
+        <br />
+
         <div>
           <label
             htmlFor=""
@@ -333,6 +397,7 @@ const Register = () => {
         </button>
 
       </form>
+      </div>
     </Fragment>
   );
 
