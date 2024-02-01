@@ -2,12 +2,12 @@
 
 .container {
     margin-top: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+    background-image: url('../../assets/img-1\ 2.png');
+    background-color: rgba(179, 177, 177, 0.6);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
     text-align: center;
-    background-color: #000;
     position: relative;
     height: 100%;
     font-family: 'Noto Sans JP', sans-serif;
@@ -56,6 +56,7 @@ img {
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Noto Sans JP', sans-serif;
+    color: #fff;
 }
 
 /* rulebook */
@@ -64,7 +65,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FCE502;
+    color: #fff;
     font-size: 24px;
     text-decoration: underline;
     font-family: 'Noto Sans JP', sans-serif;
@@ -79,16 +80,31 @@ img {
 
 /* slider-progress-bar */
 .my-slider-progress {
-    background: #4B4B4B;
+    background: #4E3A34;
     margin-bottom: 1%;
+    margin-top: 5%;
     position: relative;
+    border-radius: 20px;
 }
 
 .my-slider-progress-bar {
-    background: #FCE502;
-    height: 5px;
+    background: #6DADF3;
+    height: 6px;
     transition: width 400ms ease;
     position: relative;
+    border-radius: 20px;
+}
+
+.my-slider-progress-bar::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #6DADF3;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    right: -15px;
 }
 
 @media (min-width:200px) and (max-width:450px) {
@@ -98,5 +114,17 @@ img {
 
     .rulebook {
         font-size: 1.2rem;
+    }
+
+    .my-slider-progress-bar::after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: #6DADF3;
+        border-radius: 50%;
+        position: absolute;
+        top: -7px;
+        right: -12px;
     }
 }
