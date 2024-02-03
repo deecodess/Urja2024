@@ -1,8 +1,8 @@
-import React ,{useState}from 'react';
-import styles from './Navbar.module.css';
-import { NavLink } from 'react-router-dom';
-import Urja_logo from '../../assets/Group 23.png';
-import thapar_logo from '../../assets/thapar 1.png'
+import React, { useState } from "react";
+import styles from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
+import Urja_logo from "../../assets/Group 23.png";
+import thapar_logo from "../../assets/thapar 1.png";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -12,11 +12,9 @@ const Navbar = () => {
   };
   return (
     <nav>
-     <div className={styles.links + (showLinks ? ' show' : '')}>
+      <div className={styles.links + (showLinks ? " show" : "")}>
         <img src={Urja_logo} alt="URJA LOGO" className={styles.logo} />
-        <div className={styles['hamburger-icon']} onClick={toggleLinks}>
-          
-        </div>
+        <div className={styles["hamburger-icon"]} onClick={toggleLinks}></div>
         <NavLink exact activeClassName={styles.active_class} to="/">
           Home
         </NavLink>
@@ -35,14 +33,15 @@ const Navbar = () => {
         <NavLink exact activeClassName={styles.active_class} to="/contact">
           Contact
         </NavLink>
-        <NavLink exact activeClassName={styles.passive_class} to="/register">
-          Register Now!
-        </NavLink>
-        <img src={thapar_logo} alt="THAPAR LOGO" className={styles.thapar_logo} />
+        <a href="https://forms.gle/5SwKnYy19xbJ6EWMA">Register Now!</a>
+        <img
+          src={thapar_logo}
+          alt="THAPAR LOGO"
+          className={styles.thapar_logo}
+        />
       </div>
-      </nav>
-      
+    </nav>
   );
-}
+};
 
 export default Navbar;
