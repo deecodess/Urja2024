@@ -6,26 +6,29 @@
   text-align: center;
   background-color: #000;
 } */
-body{
-  background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+  /* body{ 
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  text-align: center;
-  background-color: #000;
-}
-
-.container {
-  margin-top: 2.5rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+  text-align: center; */
+  /* background-color: #000; */
+  /* background-color: #6DADF36B; */
+  /* z-index: -1; */
+/* }    */ 
+ .container {
+  /* margin-top: 0rem; */
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
-  text-align: center;
-  background-color: #000;
-  position: relative;
-  height: 100%;
-}
+  background-repeat: repeat; */
+  /* text-align: center; */
+  /* background-color: #000; */
+  background-color: #6DADF36B;
+  overflow-y: auto;
+  /* position: relative; */
+  height: 100vh;
+} 
 
 .social {
   display: flex;
@@ -44,6 +47,11 @@ body{
 .contact-container {
   /* background-color: black; */
   color: white;
+  /* margin-left: -10rem; */
+  /* height: 100vh; */
+  /* background-color: #6DADF36B; */
+  /* background-color: lightblue; */
+  /* z-index: 1; */
 }
 
 #name {
@@ -87,8 +95,9 @@ body{
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  overflow-y: auto ;
 }
 
 #yellow-text {
@@ -109,7 +118,7 @@ body{
 .form-container {
   max-width: 400px;
   margin-top: 3em;
-  margin-left: 7rem;
+  /* margin-left: 7rem; */
 }
 
 .logo-container {
