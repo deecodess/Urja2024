@@ -208,7 +208,13 @@ padding-bottom: 0.55%;
 
 
 
-@media (max-width: 768px) {
+@media (min-width:320px) and (max-width: 760px) {
+  .jog,
+  .jump,
+  .biking{
+    display: none;
+  }
+  
   .aboutheading,
   .historyheading,
   .themeheading{
@@ -222,6 +228,14 @@ padding-bottom: 0.55%;
     padding-bottom: 2.4%;
   }
 
+  .Historybackgroundtext::before{
+    padding-top: 10.4rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-left: 3.3rem;
+  }
+
   .audioheading{
     font-size: 1rem;
   }
@@ -230,11 +244,23 @@ padding-bottom: 0.55%;
   .p2,
   .p3{
    font-size: 0.7rem;
+   text-align: center;
   }
 
 .line1,
 .line2{
   height: 140px;
+}
+
+@keyframes foodie{
+  from {font-size: 0.5rem;}
+  to {font-size: 2rem;}
+}
+
+@keyframes goodie{
+  from {font-size: 0.5rem;transform: rotateX(0deg);}
+  to {font-size: 0.7rem;transform: rotateX(360deg);}
+
 }
 
 }
