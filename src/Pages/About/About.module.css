@@ -208,7 +208,66 @@ padding-bottom: 0.55%;
 
 
 
-@media (min-width:320px) and (max-width: 760px) {
+@media (max-width: 760px) {
+  
+  
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 3rem; /* Adjust H1 font size for smaller screens */
+  }
+
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(6); /* Adjust scale for smaller screens */
+    padding-bottom: 2.4%;
+  }
+
+  .Aboutbackgroundtext::before{
+    padding-top: 0.3rem;
+  }
+
+  .Historybackgroundtext::before{
+    padding-top: 5.4rem;
+    padding-left: 1.1rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-left: 2.5rem;
+    padding-top: 0.3rem;
+  }
+
+  .audioheading{
+    font-size: 1rem;
+  }
+
+  .p1,
+  .p2,
+  .p3{
+   font-size: 0.7rem;
+  }
+
+.line1,
+.line2{
+  height: 140px;
+}
+
+@keyframes foodie{
+  from {font-size: 0.5rem;}
+  to {font-size: 3rem;}
+}
+
+@keyframes goodie{
+  from {font-size: 0.5rem;transform: rotateX(0deg);}
+  to {font-size: 0.7rem;transform: rotateX(360deg);}
+
+}
+
+}
+
+
+@media (max-width: 380px) {
   .jog,
   .jump,
   .biking{
@@ -228,16 +287,26 @@ padding-bottom: 0.55%;
     padding-bottom: 2.4%;
   }
 
+  .Aboutbackgroundtext::before{
+    padding-bottom: 0.8rem;
+  }
+
   .Historybackgroundtext::before{
-    padding-top: 10.4rem;
+    padding-top: 10.3rem;
+    padding-right: 1.4rem;
   }
 
   .Themebackgroundtext::before{
     padding-left: 3.3rem;
+    padding-bottom: 0.8rem;
   }
 
   .audioheading{
     font-size: 1rem;
+  }
+
+  .themeheading{
+    margin-left: 8.5rem;
   }
 
   .p1,
@@ -245,6 +314,82 @@ padding-bottom: 0.55%;
   .p3{
    font-size: 0.7rem;
    text-align: center;
+  }
+
+  .p1,
+  .p3{
+    margin-left: 1.5rem;
+  }
+
+.line1,
+.line2{
+  height: 140px;
+}
+
+@keyframes foodie{
+  from {font-size: 0.5rem;}
+  to {font-size: 2rem;}
+}
+
+@keyframes goodie{
+  from {font-size: 0.5rem;transform: rotateX(0deg);}
+  to {font-size: 0.7rem;transform: rotateX(360deg);}
+
+}
+}
+
+@media (max-width: 431px) {
+  .jog,
+  .jump,
+  .biking{
+    display: none;
+  }
+  
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 2rem; /* Adjust H1 font size for smaller screens */
+  }
+
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(4); /* Adjust scale for smaller screens */
+    padding-bottom: 2.4%;
+  }
+
+  .Aboutbackgroundtext::before{
+    padding-bottom: 0.8rem;
+  }
+
+  .Historybackgroundtext::before{
+    padding-top: 9.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-left: 3.3rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .audioheading{
+    font-size: 1rem;
+  }
+
+  .themeheading{
+    margin-left: 8.5rem;
+  }
+
+  .p1,
+  .p2,
+  .p3{
+   font-size: 0.7rem;
+   text-align: center;
+  }
+
+  .p1,
+  .p3{
+    margin-left: 1.5rem;
   }
 
 .line1,
@@ -265,6 +410,51 @@ padding-bottom: 0.55%;
 
 }
 
+@media (width: 480px) {
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 2rem; /* Adjust H1 font size for smaller screens */
+  }
+
+  .aboutheading{
+    padding-left: 2rem;
+  }
+
+  .historyheading{
+    padding-right: 2.5rem;
+  }
+
+  .themeheading{
+    padding-left: 2.4rem;
+  }
+
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(5); /* Adjust scale for smaller screens */
+    padding-bottom: 1.8%;
+  }
+
+  .Aboutbackgroundtext::before{
+    padding-top: 0.1rem;
+  }
+
+  .Historybackgroundtext::before{
+    padding-top: 6.8rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-top: 0.1rem;
+  }
+
+  @keyframes foodie{
+    from {font-size: 0.5rem;}
+    to {font-size: 2rem;}
+  }
+  
+}  
+
 @media (width: 768px) {
   .aboutheading,
   .historyheading,
@@ -275,9 +465,30 @@ padding-bottom: 0.55%;
   .Aboutbackgroundtext::before ,
   .Historybackgroundtext::before,
   .Themebackgroundtext::before{
-    transform: translate(-50%, -50%) scale(4); /* Adjust scale for smaller screens */
+    transform: translate(-50%, -50%) scale(5); /* Adjust scale for smaller screens */
     padding-bottom: 1.8%;
   }
+
+  .Aboutbackgroundtext::before{
+    padding-right: 2.5rem;
+    padding-top: 0.1rem;
+  }
+
+  .Historybackgroundtext::before{
+    padding-top: 11.2rem;
+    padding-left: 3rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-right: 4rem;
+    padding-top: 0.2rem;
+  }
+
+  @keyframes foodie{
+    from {font-size: 0.5rem;}
+    to {font-size: 2rem;}
+  }
+  
 }  
 
 @media (width: 820px)  {
@@ -293,6 +504,23 @@ padding-bottom: 0.55%;
     transform: translate(-50%, -50%) scale(9); /* Adjust scale for smaller screens */
     padding-bottom: 0.9%;
   }
+
+  .Historybackgroundtext::before{
+    padding-top: 5.4rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-left: 2rem;
+  }
+
+  @keyframes foodie{
+    from {font-size: 0.5rem;}
+    to {font-size: 5rem;}
+  }
+
+  .audioheading{
+    padding-top: 5.2rem;
+  }
 }  
 
 @media (width: 912px)  {
@@ -305,9 +533,62 @@ padding-bottom: 0.55%;
   .Aboutbackgroundtext::before ,
   .Historybackgroundtext::before,
   .Themebackgroundtext::before{
-    transform: translate(-50%, -50%) scale(9); /* Adjust scale for smaller screens */
+    transform: translate(-50%, -50%) scale(10); /* Adjust scale for smaller screens */
     padding-bottom: 0.9%;
   }
+
+  .Historybackgroundtext::before{
+    padding-top: 4.7rem;
+    padding-left: 0.5rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-left: 2rem;
+  }
+
+  @keyframes foodie{
+    from {font-size: 0.5rem;}
+    to {font-size: 5rem;}
+  }
+
+  .audioheading{
+    padding-top: 5.2rem;
+  }
+}  
+
+@media (width: 1024px)  {
+  .aboutheading,
+  .historyheading,
+  .themeheading{
+    font-size: 6rem; /* Adjust H1 font size for smaller screens */
+  }
+
+  .Aboutbackgroundtext::before ,
+  .Historybackgroundtext::before,
+  .Themebackgroundtext::before{
+    transform: translate(-50%, -50%) scale(11); /* Adjust scale for smaller screens */
+    padding-bottom: 0.9%;
+  }
+
+  .Aboutbackgroundtext::before{
+    padding-top: 0.1rem;
+  }
+
+  .Historybackgroundtext::before{
+    padding-top: 4rem;
+    padding-left: 1rem;
+  }
+
+  .Themebackgroundtext::before{
+    padding-left: 1.8rem;
+    padding-top: 0.1rem;
+  }
+
+  @keyframes foodie{
+    from {font-size: 0.5rem;}
+    to {font-size: 6rem;}
+  }
+
 }  
 
 
