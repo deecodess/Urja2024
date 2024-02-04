@@ -15,13 +15,16 @@ const AutoplayExample = () => {
   const options = {
     type: "loop",
     gap: "2.2rem",
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:700, 
     pauseOnHover: false,
     resetProgress: false,
     pagination: false,
     padding: "4rem",
     arrows: false,
     drag: true,
+    speed: 700,
+    interval: 1000,
     breakpoints: {
       450: {
         perPage: 1,

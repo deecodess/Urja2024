@@ -5,7 +5,7 @@
 
 .container {
   margin-top: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.066), rgba(255, 255, 255, 0.066)), url('../../assets/21\ 1.png');
+  background-image: linear-gradient(127deg, rgba(42, 148, 244, 0.16) 43.8%, rgba(255, 238, 89, 0.08) 43.8%);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -81,6 +81,9 @@
   transition: transform 0.3s ease;
 } */
 
+
+
+
 @media (max-width: 768px) {
   .heading {
     font-size: 2rem;
@@ -96,4 +99,5 @@
   .customh4 {
     font-size: 0.8rem;
   }
+  
 }
