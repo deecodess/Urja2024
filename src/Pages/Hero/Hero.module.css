@@ -329,6 +329,30 @@ animation-direction: forward;
         margin-top: 15%;
     }
 
+    a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
     .button85 {
         padding: 0.6em 2em;
         border: none;

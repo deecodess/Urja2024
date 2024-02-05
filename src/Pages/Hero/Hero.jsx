@@ -23,10 +23,6 @@ import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
 
-  const navigates = useNavigate();
-  const Registerpage = () =>{
-      navigates('/register');
-}
   return (
     <div>
       <Navbar />
@@ -44,7 +40,9 @@ const Hero = () => {
           <h1>ANNUAL SPORTS FEST OF THAPAR INSTITUTE</h1>
         </div>
         <div className={styles.button85p}>
-        <button onClick={Registerpage} className={styles.button85}>Register Now!!</button>
+        <button className={styles.button85}>
+          <a href="https://forms.gle/5SwKnYy19xbJ6EWMA" target="registration-form">Register Now!!</a>
+        </button>
         </div>
         
         <div>
