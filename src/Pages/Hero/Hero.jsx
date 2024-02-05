@@ -26,8 +26,6 @@ const Hero = () => {
   return (
     <div>
       <Navbar />
-
-      <div className={styles.parent}>
         <div className={styles.container}>
           <img src={background2} className={styles.background} alt="" />
 
@@ -97,7 +95,6 @@ const Hero = () => {
           <Contact />
         </div>
       </div>
-    </div>
   );
 };
 
