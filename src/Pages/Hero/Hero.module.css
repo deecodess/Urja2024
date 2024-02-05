@@ -1,3 +1,9 @@
+@keyframes lion{
+    from {transform: rotatey(0deg) rotatex(0deg) rotatez(0deg);}
+    to {transform: rotatey(360deg)  rotatez(360deg);}
+  
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -127,6 +133,9 @@ body {
     /* Responsive width */
     margin-top: 4em;
     background: transparent;
+    animation-name: lion;
+animation-duration: 3s;
+animation-direction: forward;
 }
 
 .firstText,
@@ -388,6 +397,13 @@ body {
     .mobileonlytext {
         display: flex;
     }
+
+    @keyframes lion{
+        from {transform: rotatey(0deg) rotatex(0deg);}
+        to {transform: rotatey(360deg);}
+      
+      }
+
 }
 
 
