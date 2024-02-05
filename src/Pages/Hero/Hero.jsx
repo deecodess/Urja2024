@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Main from "../../assets/Group 19.png";
 // import Lion_img from "../../assets/Firefly a golden lion head trophy on a long pillar 12534 2.png";
 import styles from "./Hero.module.css";
@@ -11,14 +11,22 @@ import About from "../About/About.jsx";
 import Events from "../Events/Events.jsx";
 import Gallery from "../Gallery/Gallery.jsx";
 import Contact from "../Contact/Contact.jsx";
+import Register from "../Register/Register.jsx"
 import urja_aftermovie_final from "../../assets/urja_aftermovie_final.mp4";
 // import logo from "../../assets/logo.jpeg";
 // import phone from "../../assets/phone.png";
 import New_Logo from "../../assets/new_lion.png";
 import download from "./../../assets/download.png";
 import app from "./../../assets/app.png";
+import { useNavigate } from "react-router-dom";
+
 
 const Hero = () => {
+
+  const navigates = useNavigate();
+  const Registerpage = () =>{
+      navigates('/register');
+}
   return (
     <div>
       <Navbar />
@@ -35,6 +43,10 @@ const Hero = () => {
         <div className={styles.annualTechFest}>
           <h1>ANNUAL SPORTS FEST OF THAPAR INSTITUTE</h1>
         </div>
+        <div className={styles.button85p}>
+        <button onClick={Registerpage} className={styles.button85}>Register Now!!</button>
+        </div>
+        
         <div>
           <div className={styles.roarSection}>
             <h1 className={styles.mobileonlytext}>THE ROAR OF EMINENCE</h1>
@@ -84,7 +96,6 @@ const Hero = () => {
           <About />
           <Events />
           <Gallery />
-
           <Contact />
         </div>
       </div>
