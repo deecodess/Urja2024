@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
-import Urja_logo from "../../assets/Group 23.png";
+import Urja_logo from "../../assets/logo-urja-navbar.png";
 import thapar_logo from "../../assets/thapar 1.png";
 
 const Navbar = () => {
