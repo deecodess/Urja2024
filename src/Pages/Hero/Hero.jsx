@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
         <div className={styles.button85p}>
         <button className={styles.button85}>
-          <a href="https://forms.gle/5SwKnYy19xbJ6EWMA" target="registration-form">Register Now!!</a>
+          <a href="https://forms.gle/5SwKnYy19xbJ6EWMA" target="registration-form">Register Now</a>
         </button>
         </div>
         

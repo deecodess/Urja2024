@@ -24,7 +24,8 @@
   background-repeat: repeat; */
   /* text-align: center; */
   /* background-color: #000; */
-  background-color: #6dadf3ed;
+  background-color: #6DADF36B;
+  ;
   overflow-y: auto;
   /* position: relative; */
   height: 100vh;
@@ -91,6 +92,7 @@
   border-radius: 12%;
   background-color: yellow;
   margin-top: 1rem;
+  font-weight: bolder;
 }
 
 .contact-container {

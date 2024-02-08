@@ -61,7 +61,7 @@ nav{
 .logo {
     position: fixed;
     top: 10px; /* Adjust top position as needed */
-    left: 10px; /* Adjust left position as needed */
+    left: -7px; /* Adjust left position as needed */
     max-width: 90%;
     z-index: 1;
 }
