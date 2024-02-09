@@ -6,19 +6,22 @@ const Contact = lazy(() => import("./Pages/Contact/Contact.jsx"));
 const Events = lazy(() => import("./Pages/Events/Events.jsx"));
 const Gallery = lazy(() => import("./Pages/Gallery/Gallery.jsx"));
 const Team = lazy(() => import("./Pages/Team/Team.jsx"));
+const LandingNew = lazy(() => import("./Pages/LandingNew/LandingNew.jsx"));
 
 const AppRoute = () => {
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<LandingNew />} />
+          <Route path="/Hero" element={<Hero />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/Gallery" element={<Gallery />} />
           {/* <Route path="/Register" element={<Register />} /> */}
           <Route path="/Team" element={<Team />} />
+          <Route path="/LandingNew" element={<LandingNew />} />
           <Route path="*" element={<h1>Error 404</h1>} />
         </Routes>
       </Suspense>

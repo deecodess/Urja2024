@@ -23,8 +23,8 @@ nav{
 .links {
     display: flex;
     gap: 20px;
-    margin-top: auto; /* Adjust to move the Navbar to the center */
-    margin-bottom: auto; /* Adjust to move the Navbar to the center */
+    /* margin-top: auto;  */
+    /* margin-bottom: auto;  */
     justify-content: center;
     padding: 1rem 0;
     z-index: 1 !important; /* Add this to center the links horizontally */
@@ -68,12 +68,12 @@ nav{
 
 .thapar_logo{
     position: fixed;
-    top: 14px; /* Adjust top position as needed */
-    right: 14px; /* Adjust left position as needed */
+    top: 14px; 
+    right: 14px; 
     max-width: 90%;
     z-index: 1;
-    width:5vw;
-    height:5vh;
+    width:7vw;
+    height:auto;
 
 }
 

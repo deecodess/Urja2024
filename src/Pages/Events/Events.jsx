@@ -3,8 +3,6 @@ import styles from "./Events.module.css";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Navbar from "../../Components/Navbar/Navbar";
-
-//image imports
 import eventChess from "../../assets/events-images/events-chess.jpg";
 import eventCricket from "../../assets/events-images/events-cricket.jpg";
 import eventFootball from "../../assets/events-images/events-football.jpg";
@@ -219,13 +217,17 @@ const Events = () => {
 
             {/* rulebook */}
             <div className={styles["rulebook"]}>
-              <a
-                href={data[centerIndex].rulebookSrc}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>Rulebook</p>
-              </a>
+              
+                <button className={styles.registerButton}>
+                <a
+              
+              href={data[centerIndex].rulebookSrc}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                  Rulebook
+                  </a></button>
+              
             </div>
 
             {/* progress bar */}

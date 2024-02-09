@@ -1,0 +1,23 @@
+.footercontainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:180px;
+    transform: translateY(50%);
+}
+.celebratetext{
+    margin-left:5%;
+}
+.contactpart{
+    margin-right:15%;
+    color:white;
+    text-align: center;
+}
+.iconspart{
+    margin-right:10%;
+    width:8%;
+    transform: translateY(10%);
+}
+.instaicon{
+    margin-right:15%;
+}
