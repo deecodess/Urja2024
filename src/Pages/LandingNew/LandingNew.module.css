@@ -1,0 +1,182 @@
+@media (min-width: 1300px) {
+  .landingcontainer{
+    height: 100vh;
+    width: 100%;
+  }
+  .landingcontainer::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+    opacity:0.8;
+    background-image: url("../../assets/bglanding.svg");
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .mainheading {
+    color: white;
+    font-size: 250px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-60%);
+  }
+  h2 {
+    color: white;
+    font-size: 30px;
+  }
+  .lowerpart {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    /* transform:translateY(-100%); */
+  }
+  .lowerleftpart {
+    text-align: left;
+    width: 25% !important;
+    transform: translateY(-92%);
+    margin-left: 2%;
+    margin-right:7%;
+    /* margin-top:15% ;  */
+  }
+  .lowerrightpart {
+    text-align: right;
+    transform: translateY(-90%);
+    margin-right: 2%;
+  }
+  .centrepiece {
+    z-index: 2;
+    width: 28%;
+    height: auto;
+    margin-right: 8%;
+    transform:translateY(-135%);
+    /* margin-bottom:8%; */
+    
+  }
+
+  .videoheading {
+    font-family: "Museo Sans";
+    font-size: 1.5rem !important;
+    /* Responsive font size */
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: white;
+    background-color: #202647;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center horizontally */
+  }
+
+  .videoheading h1 {
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    margin-top: 10%;
+  }
+
+  .video {
+    width: 70%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    z-index: 1;
+    margin: 1em auto;
+    /* Center horizontally */
+  }
+  .apppart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    box-sizing: content-box;
+    background-color: #202647;
+  }
+  .downloadapp {
+    height: 42vh !important;
+    width: auto;
+  }
+  .phoneimg {
+    height: 50vh !important;
+    width: auto;
+    /* object-fit: cover; */
+  }
+  .registerButton{
+    display:none;
+  }
+}
+@media (min-width: 400px) and (max-width: 768px) {
+  .landingcontainer {
+    background-image: url("../../assets/bglandingmobile.svg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .mainheading {
+    color: white;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(10%);
+  }
+  h2 {
+    color: white;
+    font-size: 30px;
+  }
+  .lowerpart {
+    z-index: 1;
+  }
+  .lowerleftpart {
+    /* color:black; */
+    text-align: center;
+    font-weight: 300;
+    margin-top: -25%;
+  }
+  .lowerrightpart {
+    width: 35%;
+    height: auto;
+    /* font-size:150%; */
+    margin-top: -10%;
+    font-weight: 200;
+  }
+  .centrepiece {
+    width: 95%;
+    height: auto;
+    transform: translateY(40%);
+  }
+  .registerButton {
+    z-index:3;
+    border-radius: 10px;
+    border-color: white;
+    background: #fff;
+    width: 180px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #f26339;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left:30%;
+    transform: translateY(90%);
+  }
+  .videoheading{
+    display: none;
+  }
+  .apppart{
+    display:none;
+  }
+}

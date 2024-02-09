@@ -1,3 +1,6 @@
+.teampage{
+    background-color: #191919;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -7,7 +10,8 @@
     background-position: center;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: black;
+ 
+    margin-left:5%;
 }
 
 .bg1 {

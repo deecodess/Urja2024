@@ -1,4 +1,4 @@
-@keyframes goodie{
+/* @keyframes goodie{
   from {font-size: 0.5rem;transform: rotateX(0deg);}
   to {font-size: 1.4rem;transform: rotateX(360deg);}
 
@@ -8,7 +8,7 @@
   from {font-size: 0.5rem;}
   to {font-size: 6.5rem;}
 
-}
+} */
 
 .All{
   margin-top: 0;

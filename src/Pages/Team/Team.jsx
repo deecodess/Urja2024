@@ -129,10 +129,10 @@ const ImageDisplayer = () => {
     // { id: 23, name: 'Aayan Zaidi', designation: 'Overall Discipline Coordinator', imageUrl: ''},
   ];
     return (
-      <><Navbar />
+      <div className={styles.teampage}><Navbar />
     <div className={styles.container}>
-      <div className={styles.bg1}><img src={bg1} alt="" /></div>
-      <div className={styles.bg2}> <img src={bg2} alt="" /></div>
+      {/* <div className={styles.bg1}><img src={bg1} alt="" /></div> */}
+      {/* <div className={styles.bg2}> <img src={bg2} alt="" /></div> */}
       <div className={styles.backgroundImage} style={{ backgroundImage: `url(${bg1})` }}>
         <div className={styles.centerContent}>
           <h1>MEET THE TEAM</h1>
@@ -145,7 +145,7 @@ const ImageDisplayer = () => {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

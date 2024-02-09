@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "./About.module.css";
 import line1 from "../../assets/Line 4.png";
 import line2 from "../../assets/Line 7.png";
@@ -8,13 +8,19 @@ import urja_anthem from "../../assets/urja_anthem.mp3";
 import jogging from "../../assets/jogging.png";
 import biking from "../../assets/biking.png";
 import jump from "../../assets/jump.png";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const About = () => {
+  useEffect (() => {
+    Aos.init ({
+      duration: 2000});
+  }, []);
   return (
-    <>
+    <div>
       <div className={styles.All}>
         <Navbar></Navbar>
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative" }}data-aos="fade-up">
           <div className={styles.Aboutbackgroundtext}></div>
           <div className={styles.newabout}>
             <h1 className={styles.aboutheading}>ABOUT US</h1>
@@ -22,7 +28,7 @@ const About = () => {
           </div>
           <img src={line3} alt="" className={styles.AboutusLine} />
         </div>
-        <div className={styles.p1}>
+        <div className={styles.p1} data-aos="fade-up">
           <p>
             Step into URJA, the ultimate spectacle of sports brilliance! Get
             ready for the grandeur of the next edition at Thapar Institute of
@@ -40,13 +46,13 @@ const About = () => {
           <img src={line1} alt="" className={styles.line1} />
         </div>
 
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative" }} data-aos="fade-up">
           <div className={styles.Historybackgroundtext}></div>
           <h1 className={styles.historyheading}>HISTORY</h1>
           <img src={line3} alt="" className={styles.HistoryLine} />
         </div>
 
-        <div className={styles.p2}>
+        <div className={styles.p2}data-aos="fade-up">
           <img src={biking} alt="" className={styles.biking} />
           <p>
             Gear up for the highly anticipated next edition of URJA, the
@@ -70,7 +76,7 @@ const About = () => {
         </div>
         <img src={line2} alt="" className={styles.line2} />
 
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative" }}data-aos="fade-up">
           <div className={styles.Themebackgroundtext}></div>
           <div className={styles.newtheme}>
             <h1 className={styles.themeheading}>THEME</h1>
@@ -78,7 +84,7 @@ const About = () => {
           </div>
           <img src={line3} alt="" className={styles.ThemeLine} />
         </div>
-        <div className={styles.p3}>
+        <div className={styles.p3}data-aos="fade-up">
           <p>
             Unveiling 'Sher-e-Urja' – not merely a fest, but an opulent
             celebration of sportsmanship and prestige hosted by Thapar Institute
@@ -93,7 +99,7 @@ const About = () => {
         </div>
 
         <div>
-          <h2 className={styles.audioheading}>URJA ANTHEM</h2>
+          <h2 className={styles.audioheading}data-aos="fade-up">URJA ANTHEM</h2>
         </div>
         <hr
           style={{
@@ -107,7 +113,7 @@ const About = () => {
           Your browser does not support the audio element.
         </audio>
       </div>
-    </>
+    </div>
   );
 };
 
