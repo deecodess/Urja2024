@@ -37,11 +37,7 @@ const About = () => {
             Institute's legacy of hosting standout fests across India, this
             promises to be an unmissable fusion of thrill, excitement, and
             friendly competition. Imagine yourself at the epicenter of this
-            extraordinary experience at Thapar University! Train up, rally your
-            spirit, and join us in the pursuit of victory. URJA, hosted by
-            Thapar Institute of Engineering and Technology, calls you to an
-            unmatched blend of simplicity and grandeur, ensuring an experience
-            beyond compare! Your adventure awaits!
+            extraordinary experience! Your adventure awaits!
           </p>
           <img src={line1} alt="" className={styles.line1} />
         </div>
@@ -63,15 +59,7 @@ const About = () => {
             Get ready for an emotional, action-packed three-day experience
             filled with energy and excitement. URJA doesn't just focus on the
             games; it offers a holistic experience that captivates participants
-            and attendees alike. With a diverse array of sporting events,
-            participants from Thapar Institute will be pushed to their limits,
-            engaging in intense competitions that test both their skills and
-            spirits. But it doesn't stop there – URJA goes a step further by
-            incorporating enticing events such as professional shows. It's an
-            opportunity to celebrate skill, spirit, and unmatched competition.
-            Thapar Institute's URJA extends a warm invitation to all
-            participants to join in the festivities and make this three-day fest
-            an unforgettable celebration. Come and be part of the thrill!
+            and attendees alike. Come and be part of the thrill!
           </p>
         </div>
         <img src={line2} alt="" className={styles.line2} />

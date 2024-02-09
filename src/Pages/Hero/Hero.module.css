@@ -1,11 +1,11 @@
-@keyframes lion {
+/* @keyframes lion {
   from {
     transform: rotatey(0deg) rotatex(0deg) rotatez(0deg);
   }
   to {
     transform: rotatey(360deg) rotatez(360deg);
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,6 @@ body {
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: url('../../assets/diyaAsset 1 1.png'); */
 }
 .videonapp {
   background-color: #202647;
@@ -85,7 +84,7 @@ body {
   height: auto;
   position: absolute;
   z-index: -1;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .heroContainer {
@@ -111,7 +110,7 @@ body {
   z-index: 4;
 }
 
-.firstText {
+/* .firstText {
   margin-left: 5%;
   margin-right: -5%;
 }
@@ -119,7 +118,7 @@ body {
 .secondText {
   margin-right: 5%;
   margin-left: -5%;
-}
+} */
 
 .annualTechFest {
   /* font-family: 'Museo Sans Rounded'; */
@@ -132,10 +131,20 @@ body {
   color: white;
   margin-top: 1rem !important;
 }
+.annualTechFestdate {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-size: 1.5rem !important;
+    width: 40%;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: white;
+    margin-top: -0.1rem !important;
+  }
 
 .lionImage {
   width: 20vw !important;
-  margin-top: 4em;
+  margin-top: 2em;
   background: transparent;
   animation-name: lion;
   animation-duration: 3s;
