@@ -1,526 +1,499 @@
-@keyframes lion{
-    from {transform: rotatey(0deg) rotatex(0deg) rotatez(0deg);}
-    to {transform: rotatey(360deg)  rotatez(360deg);}
-  
+@keyframes lion {
+  from {
+    transform: rotatey(0deg) rotatex(0deg) rotatez(0deg);
   }
+  to {
+    transform: rotatey(360deg) rotatez(360deg);
+  }
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+@import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&display=swap")
 body {
-    margin: 0;
-    overflow-y: scroll;
-    background-size: cover;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-image: url('../../assets/diyaAsset 1 1.png'); */
+  margin: 0;
+  overflow-y: scroll;
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url('../../assets/diyaAsset 1 1.png'); */
 }
-
+.videonapp {
+  background-color: #202647;
+  padding-top:5%;
+}
 
 .app {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(45deg,#559198,#494C1A);
-    align-items: center;
-    padding: 3rem;
-    box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(45deg, #559198, #494c1a); */
+  align-items: center;
+  padding: 3rem;
+  box-sizing: content-box;
 }
 
 .app img {
-    height: 23vh;
-    width: auto;
+  height: 23vh;
+  width: auto;
 }
 
 .app .phone {
-    height: 45vh !important;
-    width: 30vw;
-    object-fit: cover;
+  height: 45vh !important;
+  width: 30vw;
+  object-fit: cover;
 }
 
 .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.55;
-    /* object-fit: cover; */
-    background-size: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.55;
+  /* object-fit: cover; */
+  background-size: contain;
 }
 
 .overlayContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
 }
 
-
 .logo {
-    max-width: 50%;
-    /* Responsive width */
-    position: absolute !important;
-    top: 5%;
-    /* Responsive positioning */
-    left: 50%;
-    transform: translateX(-50%);
-    /* Centering the logo */
-    z-index: 10;
+  max-width: 50%;
+  /* Responsive width */
+  position: absolute !important;
+  top: 5%;
+  /* Responsive positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centering the logo */
+  z-index: 10;
 }
 
 .mainImage {
-    width: 38vw !important;
-    height: auto;
-    position: absolute;
-    z-index: -1;
-    margin-bottom: 10%;
-    /* Responsive width */
+  width: 35vw !important;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  margin-bottom: 10%;
 }
 
-.container {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-start;
+.heroContainer {
+  /* background-image: url("../../assets/background2.jpg"); */
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .roarSection {
-    display: flex;
-    flex-direction: column;
-    /* Stack elements vertically on small screens */
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 7em;
 }
 
 .roarSection h1 {
-    margin-top: 12rem;
-    z-index: 4;
+  margin-top: 12rem;
+  z-index: 4;
 }
 
 .firstText {
-    margin-left: 10%;
-    margin-right: -10%;
+  margin-left: 5%;
+  margin-right: -5%;
 }
 
 .secondText {
-    margin-right: 10%;
-    margin-left: -10%;
+  margin-right: 5%;
+  margin-left: -5%;
 }
 
-
 .annualTechFest {
-    font-family: 'Museo Sans';
-    font-size: 0.8rem !important;
-    /* Responsive font size */
+  /* font-family: 'Museo Sans Rounded'; */
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-size: 1.5rem !important;
+  width: 40%;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: white;
+  margin-top: 1rem !important;
+}
+
+.lionImage {
+  width: 20vw !important;
+  margin-top: 4em;
+  background: transparent;
+  animation-name: lion;
+  animation-duration: 3s;
+  animation-direction: forward;
+}
+
+.firstText,
+.secondText {
+    font-family: "IBM Plex Serif", serif;
+  /* font-family: "Museo Sans", sans-serif; */
+  font-weight: bold;
+  color: white;
+    font-size: 2.5rem;
+}
+.bg2 {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally */
+}
+
+.registerButton {
+  background-color: #f26339;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 30px;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  border-radius: 10%;
+}
+
+.buttonText {
+  color: white;
+  font-size: 16px;
+  /* Adjust the font size as needed */
+  margin-top: 10px;
+  /* Add margin to separate from the button */
+  margin-right: 30px;
+}
+
+.videoheading {
+  font-family: "Museo Sans";
+  font-size: 1.5rem !important;
+  /* Responsive font size */
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.32em;
+  text-align: center;
+  color: white;
+  margin-top: 1em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally */
+}
+
+.urjarchivestext{
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 100;
+}
+
+.video {
+  width: 70%;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintain the aspect ratio */
+  display: block;
+  z-index: 1;
+  margin: 1em auto;
+  /* Center horizontally */
+}
+
+.appinfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.apptext {
+  color: white;
+}
+
+.smallPic {
+  width: 80px;
+  /* Adjust the width as needed */
+  height: 80px;
+  /* Adjust the height as needed */
+  margin: 10px;
+  /* Adjust the margin as needed */
+}
+
+.mobileonlytext {
+  display: none;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .button85 {
+    display: none;
+  }
+
+  .annualTechFest {
+    margin-top: 0;
+  }
+
+  .logo {
+    max-width: 30%;
+    top: 2%;
+  }
+
+  .mainImage,
+  .lionImage {
+    width: 50%;
+    padding-top: 12%;
+  }
+
+  .mainImage {
+    padding-bottom: 10%;
+  }
+
+  .roarSection {
+    flex-direction: row;
+    /* Side-by-side on larger screens */
+    justify-content: space-evenly;
+  }
+
+  .firstText,
+  .secondText {
+    margin-top: 0;
+  }
+
+  .mobileviewonly {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    max-width: 20%;
+    top: 1%;
+  }
+
+  .mainImage,
+  .lionImage {
+    width: 30%;
+    padding-top: 5px;
+  }
+
+  .annualTechFest {
+    font-size: 1rem;
+  }
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .button85p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  .button85 {
+    width: 12rem;
+    height: 4rem;
+    border-radius: 12%;
+    background-color: #fca618;
+    margin-top: -2rem;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+
+  .annualTechFest h1 {
+    font-size: 2.5vw;
+    /* Scale font size down for tablets */
+    margin-top: 30%;
+    /* Adjust spacing */
+  }
+
+  .logo {
+    width: 30%;
+    /* Adjust logo size for tablets */
+    margin-top: 2%;
+    /* Adjust logo position */
+  }
+
+  .mainImage {
+    width: 50%;
+    /* Adjust main image size for tablets */
+    margin-top: 2%;
+    /* Adjust image position */
+  }
+
+  .roarSection h1 {
+    font-size: 4.5vw;
+    /* Scale font size down for tablets */
+  }
+
+  .lionImage {
+    width: 30%;
+    /* Adjust lion image size for tablets */
+    margin: auto;
+    margin-bottom: 42%;
+    /* Adjust lion image position */
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    display: none;
+  }
+  .annualTechFest h1 {
+    font-size: 5vw;
+    margin-top: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .logo {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .mainImage {
+    width: 90% !important;
+    margin-top: 60% !important;
+  }
+
+  .roarSection {
+    width: 100%;
+  }
+
+  .roarSection h1 {
+    display: none;
+    /* font-size: 8vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  }
+
+  .lionImage {
+    width: 100% !important;
+  }
+
+  .mobileonlytext {
+    color: white;
+    font-size: 7vw;
+    margin-top: 60%;
+  }
+
+  .mobileonlytext {
+    display: flex;
+  }
+
+  @keyframes lion {
+    from {
+      transform: rotatey(0deg) rotatex(0deg);
+    }
+    to {
+      transform: rotatey(360deg);
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .app {
+    display: none;
+  }
+
+  .annualTechFest h1 {
+    font-size: 5vw;
+    margin-top: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .logo {
+    width: 50%;
+    margin-top: 10%;
+  }
+
+  .mainImage {
+    width: 90% !important;
+    margin-top: 60% !important;
+    padding-bottom: 10%;
+  }
+
+  .roarSection {
+    width: 100%;
+  }
+
+  .roarSection h1 {
+    display: none;
+    /* font-size: 8vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  }
+
+  .lionImage {
+    width: 72% !important;
+  }
+
+  .mobileonlytext {
+    color: white;
+    font-size: 7vw;
+    margin-top: 60%;
+  }
+
+  .mobileonlytext {
+    display: flex;
+  }
+}
+
+/* media query for 17 inch*/
+@media (min-width: 1600px) {
+  .annualTechFest {
+    font-family: "Museo Sans";
     font-weight: 200;
     line-height: 1.4;
     letter-spacing: 0.32em;
     text-align: center;
     color: white;
-    margin-top: 2em;
-}
-
-.lionImage {
-    width: 25vw !important;
-    /* Responsive width */
-    margin-top: 4em;
-    background: transparent;
-    animation-name: lion;
-animation-duration: 3s;
-animation-direction: forward;
-}
-
-.firstText,
-.secondText {
-    font-family: 'Museo Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-}
-
-/* 
-.bg1,
-.bg2 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-} */
-
-.bg2 {
-    width: 0px !important;
-    height: 0px !important;
-}
-
-
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center horizontally */
-
-}
-
-.registerButton {
-    background-color: #F26339;
-    /* Green background color */
-    border: none;
-    /* Remove border */
-    color: white;
-    /* White text color */
-    padding: 10px 20px;
-    /* Add some padding */
-    text-align: center;
-    /* Center text */
-    text-decoration: none;
-    /* Remove underline */
-    display: inline-block;
-    font-size: 25px;
-    /* Set font size */
-    margin-right: 30px;
-    /* Add some margin to separate from the video */
-    margin-top: 3rem;
-    margin-bottom: 0;
-    border-radius: 10%;
-}
-
-.buttonText {
-    color: white;
-    font-size: 16px;
-    /* Adjust the font size as needed */
-    margin-top: 10px;
-    /* Add margin to separate from the button */
-    margin-right: 30px;
-}
-
-
-.videoheading {
-    font-family: 'Museo Sans';
-    font-size: 1.5rem !important;
-    /* Responsive font size */
-    font-weight: 800;
-    line-height: 1.4;
-    letter-spacing: 0.32em;
-    text-align: center;
-    color: white;
     margin-top: 1em;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center horizontally */
-}
+  }
 
-.videoheading h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.video {
-    width: 70%;
-    /* Adjust the width as needed */
-    height: auto;
-    /* Maintain the aspect ratio */
-    display: block;
-    z-index: 1;
-    margin: 1em auto;
-    /* Center horizontally */
-
-}
-
-.appinfo {
-    display: flex;
-    flex-direction: row;
-}
-
-.apptext {
-    color: white;
-}
-
-.smallPic {
-    width: 80px;
-    /* Adjust the width as needed */
-    height: 80px;
-    /* Adjust the height as needed */
-    margin: 10px;
-    /* Adjust the margin as needed */
-}
-
-
-.mobileonlytext {
-    display: none;
-}
-
-/* Media queries for responsiveness */
-@media (min-width: 768px) {
-    .button85p{
-        display: none;
-    }
-    
-    .annualTechFest {
-        margin-top: 0;
-    }
-
-    .logo {
-        max-width: 30%;
-        top: 2%;
-    }
-
-    .mainImage,
-    .lionImage {
-        width: 50%;
-        padding-top: 12%;
-    }
-
-    .mainImage{
-        padding-bottom: 10%;
-    }
-
-    .roarSection {
-        flex-direction: row;
-        /* Side-by-side on larger screens */
-        justify-content: space-evenly;
-    }
-
-    .firstText,
-    .secondText {
-        margin-top: 0;
-    }
-
-    .mobileviewonly {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    .logo {
-        max-width: 20%;
-        top: 1%;
-    }
-
-    .mainImage,
-    .lionImage {
-        width: 30%;
-        padding-top: 5px;
-    }
-
-
-    .annualTechFest {
-        font-size: 1rem;
-    }
-}
-
-/* Media query for tablets */
-@media (max-width: 768px) {
-
-    .button85p{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 15%;
-    }
-
-    a:link {
-        color: green;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      
-      a:visited {
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-        font-weight: bolder;
-        font-size: 2rem;
-      }
-      
-      a:hover {
-        color: black;
-        background-color: transparent;
-        text-decoration: underline;
-        font-weight: bolder;
-      }
-      
-      a:active {
-        color: black;
-        background-color: transparent;
-        text-decoration: underline;
-        font-weight: bolder;
-      }
-
-      
-      .button85{
-      width: 12rem;
-      height: 4rem;
-      border-radius: 12%;
-      background-color: #FCA618;
-      margin-top: -2rem;
-      font-weight: bolder;
-      font-size: x-large;
-      }
-
-    .annualTechFest h1 {
-        font-size: 2.5vw;
-        /* Scale font size down for tablets */
-        margin-top: 30%;
-        /* Adjust spacing */
-    }
-
-    .logo {
-        width: 30%;
-        /* Adjust logo size for tablets */
-        margin-top: 2%;
-        /* Adjust logo position */
-    }
-
-    .mainImage {
-        width: 50%;
-        /* Adjust main image size for tablets */
-        margin-top: 2%;
-        /* Adjust image position */
-    }
-
-    .roarSection h1 {
-        font-size: 4.5vw;
-        /* Scale font size down for tablets */
-    }
-
-    .lionImage {
-        width: 30%;
-        /* Adjust lion image size for tablets */
-        margin: auto;
-        margin-bottom: 42%;
-        /* Adjust lion image position */
-    }
-}
-
-@media (max-width: 480px) {
-    .app{
-        display: none;
-    }
-    .annualTechFest h1 {
-        font-size: 5vw;
-        margin-top: 30%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .logo {
-        width: 50%;
-        margin-top: 5%;
-    }
-
-    .mainImage {
-        width: 90% !important;
-        margin-top: 60% !important;
-    }
-
-    .roarSection {
-        width: 100%;
-    }
-
-    .roarSection h1 {
-        display: none;
-        /* font-size: 8vw;
-        font-family:Verdana, Geneva, Tahoma, sans-serif; */
-    }
-
-    .lionImage {
-        width: 100% !important;
-    }
-
-    .mobileonlytext {
-        color: white;
-        font-size: 7vw;
-        margin-top: 60%;
-    }
-
-    .mobileonlytext {
-        display: flex;
-    }
-
-    @keyframes lion{
-        from {transform: rotatey(0deg) rotatex(0deg);}
-        to {transform: rotatey(360deg);}
-      
-      }
-
-}
-
-
-
-@media (min-width: 481px) and (max-width:768px) {
-
-    .app{
-        display: none;
-    }
-    
-    .annualTechFest h1 {
-        font-size: 5vw;
-        margin-top: 30%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .logo {
-        width: 50%;
-        margin-top: 10%;
-    }
-
-    .mainImage {
-        width: 90% !important;
-        margin-top: 60% !important;
-        padding-bottom: 10%;
-    }
-
-    .roarSection {
-        width: 100%;
-    }
-
-    .roarSection h1 {
-        display: none;
-        /* font-size: 8vw;
-        font-family:Verdana, Geneva, Tahoma, sans-serif; */
-    }
-
-    .lionImage {
-        width: 72% !important;
-    }
-
-    .mobileonlytext {
-        color: white;
-        font-size: 7vw;
-        margin-top: 60%;
-    }
-
-    .mobileonlytext {
-        display: flex;
-    }
-}
-
-
-/* media query for 17 inch*/
-@media(min-width:1600px) {
-    .annualTechFest {
-        font-family: 'Museo Sans';
-        font-weight: 200;
-        line-height: 1.4;
-        letter-spacing: 0.32em;
-        text-align: center;
-        color: white;
-        margin-top: 1em;
-    }
-
-    .annualTechFest h1 {
-        font-size: 3.5em;
-
-    }
-
+  .annualTechFest h1 {
+    font-size: 3.5em;
+  }
 }

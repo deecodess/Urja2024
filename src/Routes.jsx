@@ -13,7 +13,7 @@ const AppRoute = () => {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<LandingNew />} />
+          <Route path="/" element={<Hero />} />
           <Route path="/Hero" element={<Hero />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
